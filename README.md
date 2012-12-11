@@ -22,7 +22,6 @@ Directories
  - **DayZUtilites** - Server Tools
  - **Keys** - Server Keys
  - **MPMissions** - Mission Files
- - **MySQL** - MySQL Database
 
 Installation
 ------------
@@ -32,8 +31,8 @@ Vehicles
 --------
 
 
-Utilites
---------
+Utilities
+---------
 
 
 Known Bugs
@@ -45,8 +44,9 @@ Common Issues
 **Problem**: Server crashes when the first player connects	
 **Solution**: Ensure that you have `HiveEXT.dll` in your **@hive** Folder.
 
-**Problem**: Server not shown on the in-game browser or on third-party server browsers (DayZCommander etc.)	
-**Solution**: Ensure the game ports (default 2302 - 2305 UDP) are forwarded properly and that the GameSpy master server is up and running.  
+
+**Problem**: Server not shown on the in-game browser or on third-party server browsers (DayZCommander etc.)       
+**Solution**: Ensure the game ports (Default: 2302 - 2305 UDP) are forwarded properly. 
 
 **Problem**: "Bad CD Key" messages	
 **Solution**: Buy the game.
