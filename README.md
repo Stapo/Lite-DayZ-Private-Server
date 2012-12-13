@@ -1,8 +1,6 @@
 DayZ Private Server Lite
 ========================
 
-**DO NOT USE THIS AT THE MOMENT AS IT IS STILL NOT FINISHED**
-
 Requirements
 ------------
 
@@ -22,6 +20,7 @@ Directories
  - **DayZUtilites** - Server Tools
  - **Keys** - Server Keys
  - **MPMissions** - Mission Files
+ - **MySQL** - MySQL Server And Database
 
 Installation
 ------------
