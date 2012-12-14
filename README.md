@@ -14,6 +14,8 @@ Requirements
 Directories
 -----------
 
+ NOTE: The DayZ Client Files must be installed prior to installing this server pack.
+
  - **@dayz** - DayZ Client
  - **@hive** - DayZ Server And Hive
  - **DayZConfig** - Server Settings
@@ -25,14 +27,27 @@ Directories
 Installation
 ------------
 
+ NOTE: Steps with a * infront of them are optinial.
+
+ 1. Extract all the contents in this repo into your Arma 2 Combined Operations directory.
+ 2. Configure your server by editing `ServerSettings.cfg` (Located in **DayZConfig**)
+ 4. * Configure your server ip/port by editing `Start Server.bat`
+ 5. Execute `Start Server.bat` and wait for the Arma 2 Dedicated Server Console to appear.
+ 6. Enjoy!
 
 Vehicles
 --------
 
+ NOTE: There are no vehicle spawns included with this server pack (Coming soon)
+
+ - Vehicle spawn points are in the `object_spawns` table in the Database.
+ - Vehicle spawn chances, damage, classnames etc. are in the `object_classes` table in the Database.
 
 Utilities
 ---------
 
+ - Update Battleye Filters (Located in **DayZUtilities**)
+ - Update Battleye Bans (Located in **DayZUtilites**)
 
 Known Bugs
 ----------
