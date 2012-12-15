@@ -52,7 +52,7 @@ Utilities
 Known Bugs
 ----------
 
- - If you find any bugs or have any issues, please submit them [here] (https://github.com/Stapo/DayZ-Private-Server-Lite/issues).
+ - If you find any bugs or have any issues related to this server pack, please submit them [here] (https://github.com/Stapo/DayZ-Private-Server-Lite/issues).
 
 Common Issues
 -------------
