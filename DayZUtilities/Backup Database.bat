@@ -1,5 +1,5 @@
 @echo off 
-TITLE DayZ Private Server Lite: Backup Database
+TITLE Backup Database
 echo.
 echo 	This Batch File Will Backup Your Database Every 30 Minutes,
 echo 	The Backup Will Be Located In The Following Directory:
