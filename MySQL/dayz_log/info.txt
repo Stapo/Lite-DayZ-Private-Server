@@ -1,0 +1,1 @@
+this directory is where you MySQL database logs are stored
