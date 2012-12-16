@@ -1,4 +1,5 @@
 @echo off
+TITLE Update Battleye Filters
 Resources\wget.exe -N http://dayz-community-banlist.googlecode.com/git/filters/addbackpackcargo.txt
 Resources\wget.exe -N http://dayz-community-banlist.googlecode.com/git/filters/addmagazinecargo.txt
 Resources\wget.exe -N http://dayz-community-banlist.googlecode.com/git/filters/addweaponcargo.txt
@@ -37,3 +38,8 @@ move /y setpos.txt ../DayZConfig/BattlEye/
 move /y setvariable.txt ../DayZConfig/BattlEye/
 move /y setvariableval.txt ../DayZConfig/BattlEye/
 move /y teamswitch.txt ../DayZConfig/BattlEye/
+cls
+echo.
+echo BattleEye Filters Successfully Updated!
+echo.
+pause

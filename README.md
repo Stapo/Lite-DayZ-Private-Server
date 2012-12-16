@@ -47,8 +47,13 @@ Vehicles
 Utilities
 ---------
 
- - Update Battleye Filters (Located in **DayZUtilities**)
- - Update Battleye Bans (Located in **DayZUtilites**)
+ NOTE: All utilities are located in **DayZUtilities**.
+
+ - Backup Database
+ - Clear Server Logs
+ - Update Battleye Bans
+ - Update Battleye Filters
+ - Update Battleye
 
 Known Bugs
 ----------
@@ -61,9 +66,11 @@ Common Issues
 **Problem**: Server crashes when the first player connects	
 **Solution**: Ensure that you have `HiveEXT.dll` in your **@hive** Folder.
 
-
 **Problem**: Server not shown on the in-game browser or on third-party server browsers (DayZCommander etc.)       
 **Solution**: Ensure the game ports (Default: 2302 - 2305 UDP) are forwarded properly. 
 
 **Problem**: "Bad CD Key" messages	
 **Solution**: Buy the game.
+
+**Problem**: "BE Cannot Connect To Master Server" in the console window							
+**Solution**: Run `Update Battleye.bat` in **DayZUtilities**
