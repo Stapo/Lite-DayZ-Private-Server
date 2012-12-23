@@ -51,6 +51,8 @@ Utilities
 
  - Backup Database
  - Clear Server Logs
+ - Disable Kill Messages
+ - Enable Kill Messages
  - Update Battleye Bans
  - Update Battleye Filters
  - Update Battleye
