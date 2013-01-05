@@ -8,8 +8,8 @@ Resources\wget.exe -N http://dayz-community-banlist.googlecode.com/git/filters/c
 Resources\wget.exe -N http://dayz-community-banlist.googlecode.com/git/filters/deletevehicle.txt
 Resources\wget.exe -N http://dayz-community-banlist.googlecode.com/git/filters/mpeventhandler.txt
 Resources\wget.exe -N http://dayz-community-banlist.googlecode.com/git/filters/publicvariable.txt
-Resources\wget.exe -N http://dayz-community-banlist.googlecode.com/git/filters/puplicvariableval.txt
-Resources\wget.exe -N http://dayz-community-banlist.googlecode.com/git/filters/puplicvariablevar.txt
+Resources\wget.exe -N http://dayz-community-banlist.googlecode.com/git/filters/publicvariableval.txt
+Resources\wget.exe -N http://dayz-community-banlist.googlecode.com/git/filters/publicvariablevar.txt
 Resources\wget.exe -N http://dayz-community-banlist.googlecode.com/git/filters/remotecontrol.txt
 Resources\wget.exe -N http://dayz-community-banlist.googlecode.com/git/filters/remoteexec.txt
 Resources\wget.exe -N http://dayz-community-banlist.googlecode.com/git/filters/scripts.txt
@@ -26,9 +26,9 @@ move /y attachto.txt ../DayZConfig/BattlEye/
 move /y createvehicle.txt ../DayZConfig/BattlEye/
 move /y deletevehicle.txt ../DayZConfig/BattlEye/
 move /y mpeventhandler.txt ../DayZConfig/BattlEye/
-move /y puplicvariable.txt ../DayZConfig/BattlEye/
-move /y puplicvariableval.txt ../DayZConfig/BattlEye/
-move /y puplicvariablevar.txt ../DayZConfig/BattlEye/
+move /y publicvariable.txt ../DayZConfig/BattlEye/
+move /y publicvariableval.txt ../DayZConfig/BattlEye/
+move /y publicvariablevar.txt ../DayZConfig/BattlEye/
 move /y remotecontrol.txt ../DayZConfig/BattlEye/
 move /y remoteexec.txt ../DayZConfig/BattlEye/
 move /y scripts.txt ../DayZConfig/BattlEye/
