@@ -14,26 +14,26 @@ Requirements
 Installation
 ------------
 
- NOTE: Steps with a **O** infront of them are optional.
+ NOTE: Steps with a **X** infront of them are optional.
 
  1. Create a new database (call it whatever you want e.g. dayz)
- 2. **O** Create a new user by running this query (Note: The "ROOTPASSWORD" is the password you set for the root user when you installed mysql server)
+ 2. **X** Create a new user by running this query (Note: The "ROOTPASSWORD" is the password you set for the root user when you installed mysql server)
  
 		create user 'YOURDATABASENAME'@'localhost' identified by 'ROOTPASSWORD';
 		grant all privileges on YOURDATABASENAME.* to 'YOURDATABASENAME'@'localhost';
 		
- 1. Extract all the contents in this repo into your Arma 2 Combined Operations directory.
- 2. Execute `Server_Setup.bat`
- 3. Enter your MySQL login information (Note: Default user is root)
- 4. Enter the **Mod Code** for the mod you would like to use.
- 5. Enter the **Extra Code** for the extras you would like to use.
- 6. Configure your hive settings (username, password, database and timzones) by editing Config_`<Mod Name>`/`HiveEXT.ini`
- 7. Configure all the settings of your server by editing Config_`<Mod Name>`/`ServerSettings.cfg`
- 8. **O** Configure your Rcon password/max ping by editing Config_`<Mod Name>`/`BEServer.cfg`
- 9. Execute `Start Server.bat`
- 10. Enter your MySQL login information again. (Note: if you use FireDeamon for starting your server, i adivise you make another batch file to start the server using [this example] (LINK TO BATCH).)
- 11. Wait for the ArmA II Server Console to appear.
- 12. Go and join your server!
+ 3. Extract all the contents in this repo into your Arma 2 Combined Operations directory.
+ 4. Execute `Server_Setup.bat`
+ 5. Enter your MySQL login information (Note: Default user is root)
+ 6. Enter the **Mod Code** for the mod you would like to use.
+ 7. Enter the **Extra Code** for the extras you would like to use.
+ 8. Configure your hive settings (username, password, database, time and date) by editing Config_`<Mod Name>`/`HiveEXT.ini`
+ 9. Configure all the settings of your server by editing Config_`<Mod Name>`/`ServerSettings.cfg`
+ 10. **X** Configure your Rcon password/max ping by editing Config_`<Mod Name>`/`BEServer.cfg`
+ 11. Execute `Start Server.bat`
+ 12. Enter your MySQL login information again. (Note: if you use FireDeamon for starting your server, i adivise you make another batch file to start the server using [this example] (https://github.com/Stapo/Lite-Repo/raw/master/Example_Start_Server.bat).)
+ 13. Wait for the ArmA II Server Console to appear.
+ 14. Go and join your server!
  
 Mod Codes
 ---------
@@ -42,31 +42,31 @@ Mod Codes
 
 <table>
   <tr>
-    <td>Mod Code</td><td>Mod Name</td><td>Version</td><td>Website URL</td>
+    <td>Mod Code</td><td>Mod Name</td><td>Supported Version</td>
   </tr>
   <tr>
-    <td>chernarus</td><td>DayZ</td><td>1.7.4.4</td><td>http://www.dayzmod.com</td>
+    <td>chernarus</td><td>DayZ</td><td>1.7.4.4</td>
   </tr>
   <tr>
-    <td>namalsk</td><td>DayZ Namalsk</td><td>0.73</td><td>http://www.nightstalkers.cz</td>
+    <td>namalsk</td><td>DayZ Namalsk</td><td>0.73</td>
   </tr>
   <tr>
-    <td>plus</td><td>DayZ+</td><td>1.1.2</td><td>http://www.dayzplus.com</td>
+    <td>plus</td><td>DayZ+</td><td>1.1.2</td>
   </tr>
   <tr>
-    <td>2017</td><td>DayZ 2017</td><td>1.1</td><td>http://www.opendayz.net</td>
+    <td>2017</td><td>DayZ 2017</td><td>1.1</td>
   </tr>
   <tr>
-    <td>tavianaeu</td><td>DayZ Taviana (DayZLand.eu)</td><td>1.5.0</td><td>http://www.dayzland.eu</td>
+    <td>tavianaeu</td><td>DayZ Taviana (DayZLand.eu)</td><td>1.5.0</td>
   </tr>
   <tr>
-    <td>isladuala</td><td>DayZ Isladuala</td><td>1.1</td><td>http://www.opendayz.net</td>
+    <td>isladuala</td><td>DayZ Isladuala</td><td>1.1</td>
   </tr>
   <tr>
-    <td>thirsk</td><td>DayZ Thirsk</td><td>1.3</td><td>http://www.opendayz.net</td>
+    <td>thirsk</td><td>DayZ Thirsk</td><td>1.3</td>
   </tr>
   <tr>
-    <td>thirskwinter</td><td>DayZ Thirsk Winter</td><td>1.3</td><td>http://www.opendayz.net</td>
+    <td>thirskwinter</td><td>DayZ Thirsk Winter</td><td>1.3</td>
   </tr>
 </table>
 
@@ -77,16 +77,19 @@ Extras Codes
 
 <table>
   <tr>
-    <td>Extra Name</td><td>Extra Code</td>
+    <td>Extra Code</td><td>Extra Name</td>
   </tr>
   <tr>
-    <td>Care Packages</td><td>carepkgs</td>
+    <td>none</td><td>No Extas</td>
   </tr>
   <tr>
-    <td>Wrecks</td><td>wrecks</td>
+    <td>carepkgs</td><td>Care Packages</td>
   </tr>
   <tr>
-    <td>Care Packages + Wrecks</td><td>carepkgsandwrecks</td>
+    <td>wrecks</td><td>Wrecks</td>
+  </tr>
+  <tr>
+    <td>carepkgsandwrecks</td><td>Care Packages + Wrecks</td>
   </tr>
 </table>
 
