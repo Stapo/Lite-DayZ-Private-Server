@@ -57,7 +57,7 @@ Mod Codes
     <td>2017</td><td>DayZ 2017</td><td>1.1</td>
   </tr>
   <tr>
-    <td>tavianaeu</td><td>DayZSahrani</td><td>0.1</td>
+    <td>sahrani</td><td>DayZSahrani</td><td>0.1</td>
   </tr>
   <tr>
     <td>isladuala</td><td>DayZ Isladuala</td><td>1.1</td>
