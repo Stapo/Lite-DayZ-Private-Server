@@ -28,7 +28,7 @@ if "%mod%"=="chernarus" goto DayZChernarus
 if "%mod%"=="namalsk" goto DayZNamalsk
 if "%mod%"=="plus" goto DayZPlus
 if "%mod%"=="2017" goto DayZ2017
-if "%mod%"=="tavianaeu" goto DayZTaviana_eu
+if "%mod%"=="sahrani" goto DayZSahrani
 if "%mod%"=="isladuala" goto DayZIsladuala
 if "%mod%"=="thirsk" goto DayZThirsk
 if "%mod%"=="thirskwinter" goto DayZThirsk_Winter
@@ -105,21 +105,23 @@ Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Li
 move /Y dayz_1.Chernarus.pbo MPMissions
 goto Extras_Selection
 
-:DayZTaviana_eu
+:DayZSahrani
 cls
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Keys/DayzTavianaDZL.bikey
-move /Y DayzTavianaDZL.bikey Keys
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Config/Config.pbo
-Resources\cpbo.exe -Y -E Config.pbo Config_DayZTaviana-eu > NUL
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Keys/caa1v2.bikey
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Keys/dayzsara.bikey
+move /Y caa1v2.bikey Keys
+move /Y dayzsara.bikey Keys
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Config/Config.pbo
+Resources\cpbo.exe -Y -E Config.pbo Config_DayZSahrani > NUL
 del Config.pbo
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Schema/Tables.sql
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Schema/Tables.sql
 Resources\mysql.exe --user=%mysqluser% --password=%mysqlpass% --host=127.0.0.1 --port=3306 --database=%mysqldb% < Tables.sql
 del Tables.sql
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Schema/Functions.sql
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Schema/Functions.sql
 Resources\mysql.exe --user=%mysqluser% --password=%mysqlpass% --host=127.0.0.1 --port=3306 --database=%mysqldb% < Functions.sql
 del Functions.sql
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Mission/dayz_1.tavi.pbo
-move /Y dayz_1.tavi.pbo MPMissions
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Mission/dayz_1.sara.pbo
+move /Y dayz_1.sara.pbo MPMissions
 goto Extras_Selection
 
 :DayZIsladuala
@@ -208,8 +210,8 @@ Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Li
 if exist Config_DayZ2017 (
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZ2017/Extras/None.pbo
 )
-if exist Config_DayZTaviana-eu (
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Extras/None.pbo
+if exist Config_DayZSahrani (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Extras/None.pbo
 )
 if exist Config_DayZIsladuala (
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZIsladuala/Extras/None.pbo
@@ -252,8 +254,8 @@ Resources\cpbo.exe -Y -E None.pbo @Server > NUL
 del None.pbo
 goto Finish
 )
-if exist Config_DayZTaviana-eu (
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Extras/Carepkgs.pbo
+if exist Config_DayZSahrani (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Extras/Carepkgs.pbo
 )
 if exist Config_DayZIsladuala (
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZIsladuala/Extras/Carepkgs.pbo
@@ -296,8 +298,8 @@ Resources\cpbo.exe -Y -E None.pbo @Server > NUL
 del None.pbo
 goto Finish
 )
-if exist Config_DayZTaviana-eu (
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Extras/Wrecks.pbo
+if exist Config_DayZSahrani (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Extras/Wrecks.pbo
 goto Finish
 )
 if exist Config_DayZIsladuala (
@@ -341,15 +343,8 @@ Resources\cpbo.exe -Y -E None.pbo @Server > NUL
 del None.pbo
 goto Finish
 )
-if exist Config_DayZTaviana-eu (
-echo DayZTaviana-eu does not support Kill Messages, Server will now continue building as normal.
-echo.
-echo.
-pause
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
-del None.pbo
-goto Finish
+if exist Config_DayZSahrani (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Extras/Killmsgs.pbo
 )
 if exist Config_DayZIsladuala (
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZIsladuala/Extras/Killmsgs.pbo
@@ -392,8 +387,8 @@ Resources\cpbo.exe -Y -E None.pbo @Server > NUL
 del None.pbo
 goto Finish
 )
-if exist Config_DayZTaviana-eu (
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Extras/Carepkgs_Wrecks.pbo
+if exist Config_DayZSahrani (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Extras/Carepkgs_Wrecks.pbo
 )
 if exist Config_DayZIsladuala (
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZIsladuala/Extras/Carepkgs_Wrecks.pbo
@@ -436,15 +431,8 @@ Resources\cpbo.exe -Y -E None.pbo @Server > NUL
 del None.pbo
 goto Finish
 )
-if exist Config_DayZTaviana-eu (
-echo DayZTaviana-eu does not support Care Packages and Kill Messages, Server will now continue building as normal.
-echo.
-echo.
-pause
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
-del None.pbo
-goto Finish
+if exist Config_DayZSahrani (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Extras/Carepkgs_Killmsgs.pbo
 )
 if exist Config_DayZIsladuala (
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZIsladuala/Extras/Carepkgs_Killmsgs.pbo
@@ -487,15 +475,8 @@ Resources\cpbo.exe -Y -E None.pbo @Server > NUL
 del None.pbo
 goto Finish
 )
-if exist Config_DayZTaviana-eu (
-echo DayZTaviana-eu does not support Wrecks and Kill Messages, Server will now continue building as normal.
-echo.
-echo.
-pause
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
-del None.pbo
-goto Finish
+if exist Config_DayZSahrani (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Extras/Wrecks_Killmsgs.pbo
 )
 if exist Config_DayZIsladuala (
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZIsladuala/Extras/Wrecks_Killmsgs.pbo
@@ -538,15 +519,8 @@ Resources\cpbo.exe -Y -E None.pbo @Server > NUL
 del None.pbo
 goto Finish
 )
-if exist Config_DayZTaviana-eu (
-echo DayZTaviana-eu does not support Care Packages , Wrecks and Kill Messages, Server will now continue building as normal.
-echo.
-echo.
-pause
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
-del None.pbo
-goto Finish
+if exist Config_DayZSahrani (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Extras/Carepkgs_Wrecks_Killmsgs.pbo
 )
 if exist Config_DayZIsladuala (
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZIsladuala/Extras/Carepkgs_Wrecks_Killmsgs.pbo
@@ -590,9 +564,9 @@ if exist Config_DayZ2017 (
 set modconfig=DayZ2017
 set clientmod=@DayZ2017
 )
-if exist Config_DayZTaviana-eu (
-set modconfig=DayZTaviana-eu
-set clientmod=@DayZTaviana
+if exist Config_DayZSahrani (
+set modconfig=DayZSahrani
+set clientmod=@DayZ_Sahrani;@caa1
 )
 if exist Config_DayZIsladuala (
 set modconfig=DayZIsladuala
