@@ -89,7 +89,19 @@ Extras Codes
     <td>wrecks</td><td>Wrecks</td>
   </tr>
   <tr>
-    <td>carepkgsandwrecks</td><td>Care Packages + Wrecks</td>
+    <td>killmsgs</td><td>Kill Messages</td>
+  </tr>
+  <tr>
+    <td>combo1</td><td>Care Packages and Wrecks</td>
+  </tr>
+  <tr>
+    <td>combo2</td><td>Care Packages and Kill Messages</td>
+  </tr>
+  <tr>
+    <td>combo3</td><td>Wrecks and Kill Messages</td>
+  </tr>
+  <tr>
+    <td>combo4</td><td>Care Packages, Wrecks and Kill Messages</td>
   </tr>
 </table>
 

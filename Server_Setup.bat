@@ -186,7 +186,12 @@ set /P extra=Extra Code:
 if "%extra%"=="none" goto Extras_None
 if "%extra%"=="carepkgs" goto Extras_Carepkgs
 if "%extra%"=="wrecks" goto Extras_Wrecks
-if "%extra%"=="carepkgsandwrecks" goto Extras_Carepkgs_Wrecks
+if "%extra%"=="killmsgs" goto Extras_Killmsgs
+if "%extra%"=="combo1" goto Extras_Carepkgs_Wrecks
+if "%extra%"=="combo2" goto Extras_Carepkgs_Killmsgs
+if "%extra%"=="combo3" goto Extras_Wrecks_Killmsgs
+if "%extra%"=="combo4" goto Extras_Carepkgs_Wrecks_Killmsgs
+
 goto Extras_None
 
 :Extras_None
@@ -308,6 +313,57 @@ Resources\cpbo.exe -Y -E Wrecks.pbo @Server > NUL
 del Wrecks.pbo
 goto Finish
 
+:Extras_Killmsgs
+cls
+if exist Config_DayZChernarus (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZChernarus/Extras/Killmsgs.pbo
+)
+if exist Config_DayZNamalsk (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZNamalsk/Extras/Killmsgs.pbo
+)
+if exist Config_DayZPlus (
+echo DayZ+ does not support Kill Messages, Server will now continue building as normal.
+echo.
+echo.
+pause
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZPlus/Extras/None.pbo
+Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+del None.pbo
+goto Finish
+)
+if exist Config_DayZ2017 (
+echo DayZ2017 does not support Kill Messages, Server will now continue building as normal.
+echo.
+echo.
+pause
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZ2017/Extras/None.pbo
+Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+del None.pbo
+goto Finish
+)
+if exist Config_DayZTaviana-eu (
+echo DayZTaviana-eu does not support Kill Messages, Server will now continue building as normal.
+echo.
+echo.
+pause
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Extras/None.pbo
+Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+del None.pbo
+goto Finish
+)
+if exist Config_DayZIsladuala (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZIsladuala/Extras/Killmsgs.pbo
+)
+if exist Config_DayZThirsk (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZThirsk/Extras/Killmsgs.pbo
+)
+if exist Config_DayZThirsk-Winter (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZThirsk-Winter/Extras/Killmsgs.pbo
+)
+Resources\cpbo.exe -Y -E Killmsgs.pbo @Server > NUL
+del Killmsgs.pbo
+goto Finish
+
 :Extras_Carepkgs_Wrecks
 cls
 if exist Config_DayZChernarus (
@@ -350,6 +406,159 @@ Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Li
 )
 Resources\cpbo.exe -Y -E Carepkgs_Wrecks.pbo @Server > NUL
 del Carepkgs_Wrecks.pbo
+goto Finish
+
+:Extras_Carepkgs_Killmsgs
+cls
+if exist Config_DayZChernarus (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZChernarus/Extras/Carepkgs_Killmsgs.pbo
+)
+if exist Config_DayZNamalsk (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZNamalsk/Extras/Carepkgs_Killmsgs.pbo
+)
+if exist Config_DayZPlus (
+echo DayZ+ does not support Care Packages and Kill Messages, Server will now continue building as normal.
+echo.
+echo.
+pause
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZPlus/Extras/None.pbo
+Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+del None.pbo
+goto Finish
+)
+if exist Config_DayZ2017 (
+echo DayZ2017 does not support Care Packages and Kill Messages, Server will now continue building as normal.
+echo.
+echo.
+pause
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZ2017/Extras/None.pbo
+Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+del None.pbo
+goto Finish
+)
+if exist Config_DayZTaviana-eu (
+echo DayZTaviana-eu does not support Care Packages and Kill Messages, Server will now continue building as normal.
+echo.
+echo.
+pause
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Extras/None.pbo
+Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+del None.pbo
+goto Finish
+)
+if exist Config_DayZIsladuala (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZIsladuala/Extras/Carepkgs_Killmsgs.pbo
+)
+if exist Config_DayZThirsk (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZThirsk/Extras/Carepkgs_Killmsgs.pbo
+)
+if exist Config_DayZThirsk-Winter (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZThirsk-Winter/Extras/Carepkgs_Killmsgs.pbo
+)
+Resources\cpbo.exe -Y -E Carepkgs_Killmsgs.pbo @Server > NUL
+del Carepkgs_Killmsgs.pbo
+goto Finish
+
+:Extras_Wrecks_Killmsgs
+cls
+if exist Config_DayZChernarus (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZChernarus/Extras/Wrecks_Killmsgs.pbo
+)
+if exist Config_DayZNamalsk (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZNamalsk/Extras/Wrecks_Killmsgs.pbo
+)
+if exist Config_DayZPlus (
+echo DayZ+ does not support Wrecks and Kill Messages, Server will now continue building as normal.
+echo.
+echo.
+pause
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZPlus/Extras/None.pbo
+Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+del None.pbo
+goto Finish
+)
+if exist Config_DayZ2017 (
+echo DayZ2017 does not support Wrecks and Kill Messages, Server will now continue building as normal.
+echo.
+echo.
+pause
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZ2017/Extras/None.pbo
+Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+del None.pbo
+goto Finish
+)
+if exist Config_DayZTaviana-eu (
+echo DayZTaviana-eu does not support Wrecks and Kill Messages, Server will now continue building as normal.
+echo.
+echo.
+pause
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Extras/None.pbo
+Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+del None.pbo
+goto Finish
+)
+if exist Config_DayZIsladuala (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZIsladuala/Extras/Wrecks_Killmsgs.pbo
+)
+if exist Config_DayZThirsk (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZThirsk/Extras/Wrecks_Killmsgs.pbo
+)
+if exist Config_DayZThirsk-Winter (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZThirsk-Winter/Extras/Wrecks_Killmsgs.pbo
+)
+Resources\cpbo.exe -Y -E Wrecks_Killmsgs.pbo @Server > NUL
+del Wrecks_Killmsgs.pbo
+goto Finish
+
+:Extras_Carepkgs_Wrecks_Killmsgs
+cls
+if exist Config_DayZChernarus (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZChernarus/Extras/Carepkgs_Wrecks_Killmsgs.pbo
+)
+if exist Config_DayZNamalsk (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZNamalsk/Extras/Carepkgs_Wrecks_Killmsgs.pbo
+)
+if exist Config_DayZPlus (
+echo DayZ+ does not support Care Packages , Wrecks and Kill Messages, Server will now continue building as normal.
+echo.
+echo.
+pause
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZPlus/Extras/None.pbo
+Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+del None.pbo
+goto Finish
+)
+if exist Config_DayZ2017 (
+echo DayZ2017 does not support Care Packages , Wrecks and Kill Messages, Server will now continue building as normal.
+echo.
+echo.
+pause
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZ2017/Extras/None.pbo
+Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+del None.pbo
+goto Finish
+)
+if exist Config_DayZTaviana-eu (
+echo DayZTaviana-eu does not support Care Packages , Wrecks and Kill Messages, Server will now continue building as normal.
+echo.
+echo.
+pause
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZTaviana-eu/Extras/None.pbo
+Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+del None.pbo
+goto Finish
+)
+if exist Config_DayZIsladuala (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZIsladuala/Extras/Carepkgs_Wrecks_Killmsgs.pbo
+)
+if exist Config_DayZThirsk (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZThirsk/Extras/Carepkgs_Wrecks_Killmsgs.pbo
+)
+if exist Config_DayZThirsk-Winter (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZThirsk-Winter/Extras/Carepkgs_Wrecks_Killmsgs.pbo
+)
+Resources\cpbo.exe -Y -E Carepkgs_Wrecks_Killmsgs.pbo @Server > NUL
+del Carepkgs_Wrecks_Killmsgs.pbo
 goto Finish
 
 :Finish
