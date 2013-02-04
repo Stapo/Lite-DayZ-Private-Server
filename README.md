@@ -19,8 +19,8 @@ Installation
  1. Create a new database (call it whatever you want e.g. dayz)
  2. **X** Create a new user by running this query (Note: The "ROOTPASSWORD" is the password you set for the root user when you installed mysql server)
  
-		create user 'YOURDATABASENAME'@'localhost' identified by 'ROOTPASSWORD';
-		grant all privileges on YOURDATABASENAME.* to 'YOURDATABASENAME'@'localhost';
+		create user 'YOURUSERNAME'@'localhost' identified by 'ROOTPASSWORD';
+		grant all privileges on YOURDATABASENAME.* to 'YOURUSERNAME'@'localhost';
 		
  3. Extract all the contents in this repo into your Arma 2 Combined Operations directory.
  4. Execute `Server_Setup.bat`
