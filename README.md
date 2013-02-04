@@ -38,56 +38,56 @@ Installation
 Mod Codes
 ---------
 
- **Note:** The mod which you would like to use must be installed prior to installing the server, this can be done by downloading most of them with [DayZCommander] (http://www.dayzcommander.com).
+ **Note:** The mod which you would like to use must be installed prior to installing the server, this can be done by downloading most of them with [**DayZCommander**] (http://www.dayzcommander.com).
 
 <table>
   <tr>
-    <td>Mod Code</td><td>Mod Name</td><td>Supported Version</td><td>Direct Download Link</td>
+    <td>Mod Code</td><td>Mod Name</td><td>Supported Version</td><td>Direct Link</td>
   </tr>
   <tr>
-    <td>chernarus</td><td>DayZ</td><td>1.7.5.1</td><td>http://cdn.dayz.st/dayzcommander/DayZ-1.7.5.1.rar</td>
+    <td>chernarus</td><td>DayZ</td><td>1.7.5.1</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZ-1.7.5.1.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>namalsk</td><td>DayZ Namalsk</td><td>0.73</td><td>http://cdn.dayz.st/dayzcommander/DayZNamalsk-0.73.rar</td>
+    <td>namalsk</td><td>DayZ Namalsk</td><td>0.73</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZNamalsk-0.73.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>plus</td><td>DayZ+</td><td>1.1.2</td><td>http://cdn.dayz.st/dayzcommander/DayZPlus-1.1.2.rar</td>
+    <td>plus</td><td>DayZ+</td><td>1.1.2</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZPlus-1.1.2.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>2017</td><td>DayZ 2017</td><td>1.1</td><td>http://cdn.dayz.st/dayzcommander/DayZ2017-1.1.rar</td>
+    <td>2017</td><td>DayZ 2017</td><td>1.1</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZ2017-1.1.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>sahrani</td><td>DayZ Sahrani</td><td>0.1</td><td>http://5.135.153.158/@DayZ_Sahrani.rar</td>
+    <td>sahrani</td><td>DayZ Sahrani</td><td>0.1</td><td><b><a href="http://5.135.153.158/@DayZ_Sahrani.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>isladuala</td><td>DayZ Isladuala</td><td>1.1</td><td>http://cdn.dayz.st/dayzcommander/DayZIsladuala-1.1.rar</td>
+    <td>isladuala</td><td>DayZ Isladuala</td><td>1.1</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZIsladuala-1.1.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>thirsk</td><td>DayZ Thirsk</td><td>1.3</td><td>http://cdn.dayz.st/dayzcommander/DayZThirsk-1.3.rar</td>
+    <td>thirsk</td><td>DayZ Thirsk</td><td>1.3</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZThirsk-1.3.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>thirskwinter</td><td>DayZ Thirsk Winter</td><td>1.3</td><td>http://cdn.dayz.st/dayzcommander/DayZThirsk-1.3.rar</td>
+    <td>thirskwinter</td><td>DayZ Thirsk Winter</td><td>1.3</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZThirsk-1.3.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>lingor</td><td>DayZ Lingor</td><td>1.2</td><td>http://cdn.dayz.st/dayzcommander/DayZLingor-1.2.rar</td>
+    <td>lingor</td><td>DayZ Lingor</td><td>1.2</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZLingor-1.2.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>celle</td><td>DayZ Celle</td><td>1.7.4.4</td><td>http://cdn.dayz.st/dayzcommander/DayZCelle-1.7.4.4.rar</td>
+    <td>celle</td><td>DayZ Celle</td><td>1.7.4.4</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZCelle-1.7.4.4.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>fallujah</td><td>DayZ Fallujah</td><td>1.4</td><td>http://cdn.dayz.st/dayzcommander/DayZFallujah-1.4.rar</td>
+    <td>fallujah</td><td>DayZ Fallujah</td><td>1.4</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZFallujah-1.4.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>panthera</td><td>DayZ Panthera</td><td>1.7</td><td>http://cdn.dayz.st/dayzcommander/DayZPanthera-1.7.rar</td>
+    <td>panthera</td><td>DayZ Panthera</td><td>1.7</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZPanthera-1.7.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>takistan</td><td>DayZ Takistan</td><td>1.6</td><td>http://cdn.dayz.st/dayzcommander/DayZTakistan-1.6.rar</td>
+    <td>takistan</td><td>DayZ Takistan</td><td>1.6</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZTakistan-1.6.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>utes</td><td>DayZ Utes</td><td>1.2</td><td>http://cdn.dayz.st/dayzcommander/DayZUtes-1.2.rar</td>
+    <td>utes</td><td>DayZ Utes</td><td>1.2</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZUtes-1.2.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>zargabad</td><td>DayZ Zargabad</td><td>1.4</td><td>http://cdn.dayz.st/dayzcommander/DayZZargabad-1.4.rar</td>
+    <td>zargabad</td><td>DayZ Zargabad</td><td>1.4</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZZargabad-1.4.rar" >Download</a></b></td>
   </tr>
 </table>
 
