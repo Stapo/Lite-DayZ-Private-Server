@@ -6,74 +6,95 @@ Requirements
 
  - Microsoft Windows (Tested with 7 and Server 2008)
  - ArmA 2 Combined Operations Dedicated Server (Steam users must merge ArmA2 and ArmA2 OA Directories)
- - Latest ArmA 2 Operation Arrowhead Beta Patch (http://www.arma2.com/beta-patch.php)
- - MySQL Server 5.5.x With TCP/IP Networking enabled using Port 3306 (http://dev.mysql.com/downloads/mysql/)
- - MySQL Database program such as Navicat or HeidiSQL (http://www.navicat.com/en/download/download.html) (http://www.heidisql.com/download.php)
- - Microsoft Visual C++ 2010 SP1 x86 Redistributable (http://www.microsoft.com/en-us/download/details.aspx?id=8328)
+ - Latest [ArmA 2 Operation Arrowhead Beta Patch] (http://www.arma2.com/beta-patch.php)
+ - [MySQL Server 5.5.x] (http://dev.mysql.com/downloads/mysql/) With TCP/IP Networking enabled using Port 3306
+ - MySQL Database program such as [Navicat For MySql] (http://www.navicat.com/en/download/download.html) or [HeidiSQL] (http://www.heidisql.com/download.php)
+ - [Microsoft Visual C++ 2010 SP1 x86 Redistributable] (http://www.microsoft.com/en-us/download/details.aspx?id=8328)
 
 Installation
 ------------
 
- NOTE: Steps with a **X** infront of them are optional.
+ **Note:** Steps with a **X** infront of them are optional.
 
  1. Create a new database (call it whatever you want e.g. dayz)
- 2. **X** Create a new user by running this query (Note: The "ROOTPASSWORD" is the password you set for the root user when you installed mysql server)
+ 2. **X** Create a new user by running this query in your database you just created (Note: The "ROOTPASSWORD" is the password you set for the root user when you installed mysql server).
  
 		create user 'YOURUSERNAME'@'localhost' identified by 'ROOTPASSWORD';
 		grant all privileges on YOURDATABASENAME.* to 'YOURUSERNAME'@'localhost';
 		
- 3. Extract all the contents in this repo into your Arma 2 Combined Operations directory.
- 4. Execute `Server_Setup.bat`
- 5. Enter your MySQL login information (Note: Default user is root)
+ 3. Extract all the contents of this repo into your Arma 2 Combined Operations directory.
+ 4. Execute `Server_Setup.bat`.
+ 5. Enter your MySQL login information (Note: Default username is root).
  6. Enter the **Mod Code** for the mod you would like to use.
  7. Enter the **Extra Code** for the extras you would like to use.
- 8. Configure your hive settings (username, password, database, time and date) by editing Config_`<Mod Name>`/`HiveEXT.ini`
- 9. Configure all the settings of your server by editing Config_`<Mod Name>`/`ServerSettings.cfg`
- 10. **X** Configure your Rcon password/max ping by editing Config_`<Mod Name>`/`BEServer.cfg`
- 11. Execute `Start Server.bat`
- 12. Enter your MySQL login information again. (Note: if you use FireDeamon for starting your server, i adivise you make another batch file to start the server using [this example] (https://github.com/Stapo/Lite-Repo/raw/master/Example_Start_Server.bat).)
+ 8. Configure your hive settings (username, password, database, time and date) by editing `Config_<Mod Name>`/`HiveEXT.ini`.
+ 9. Configure all the settings of your server by editing `Config_<Mod Name>`/`ServerSettings.cfg`.
+ 10. **X** Configure your Rcon password/max ping by editing `Config_<Mod Name>`/`BEServer.cfg`.
+ 11. Execute `Start Server.bat`.
+ 12. Enter your MySQL login information again. (**Note:** if you use FireDeamon for starting your server, i adivise you make another batch file to start the server using [this example] (https://github.com/Stapo/Lite-Repo/raw/master/Example_Start_Server.bat)).
  13. Wait for the ArmA II Server Console to appear.
  14. Go and join your server!
  
 Mod Codes
 ---------
 
- NOTE: Which ever mod you will be using must be installed prior to installing the server (Preferbly by downloading them through DayZCommander).
+ **Note:** The mod which you would like to use must be installed prior to installing the server, this can be done by downloading most of them with [DayZCommander] (http://www.dayzcommander.com).
 
 <table>
   <tr>
-    <td>Mod Code</td><td>Mod Name</td><td>Supported Version</td>
+    <td>Mod Code</td><td>Mod Name</td><td>Supported Version</td><td>Direct Download Link</td>
   </tr>
   <tr>
-    <td>chernarus</td><td>DayZ</td><td>1.7.4.4</td>
+    <td>chernarus</td><td>DayZ</td><td>1.7.5.1</td><td>http://cdn.armafiles.info/latest/1.7.5/@Client-1.7.5.1-Full.rar</td>
   </tr>
   <tr>
-    <td>namalsk</td><td>DayZ Namalsk</td><td>0.73</td>
+    <td>namalsk</td><td>DayZ Namalsk</td><td>0.73</td><td>http://cdn.dayz.st/dayzcommander/DayZNamalsk-0.73.rar</td>
   </tr>
   <tr>
-    <td>plus</td><td>DayZ+</td><td>1.1.2</td>
+    <td>plus</td><td>DayZ+</td><td>1.1.2</td><td>http://cdn.dayz.st/dayzcommander/DayZPlus-1.1.2.rar</td>
   </tr>
   <tr>
-    <td>2017</td><td>DayZ 2017</td><td>1.1</td>
+    <td>2017</td><td>DayZ 2017</td><td>1.1</td><td>http://cdn.dayz.st/dayzcommander/DayZ2017-1.1.rar</td>
   </tr>
   <tr>
-    <td>sahrani</td><td>DayZSahrani</td><td>0.1</td>
+    <td>sahrani</td><td>DayZ Sahrani</td><td>0.1</td><td>http://5.135.153.158/@DayZ_Sahrani.rar</td>
   </tr>
   <tr>
-    <td>isladuala</td><td>DayZ Isladuala</td><td>1.1</td>
+    <td>isladuala</td><td>DayZ Isladuala</td><td>1.1</td><td>http://cdn.dayz.st/dayzcommander/DayZIsladuala-1.1.rar</td>
   </tr>
   <tr>
-    <td>thirsk</td><td>DayZ Thirsk</td><td>1.3</td>
+    <td>thirsk</td><td>DayZ Thirsk</td><td>1.3</td><td>http://cdn.dayz.st/dayzcommander/DayZThirsk-1.3.rar</td>
   </tr>
   <tr>
-    <td>thirskwinter</td><td>DayZ Thirsk Winter</td><td>1.3</td>
+    <td>thirskwinter</td><td>DayZ Thirsk Winter</td><td>1.3</td><td>http://cdn.dayz.st/dayzcommander/DayZThirsk-1.3.rar</td>
+  </tr>
+  <tr>
+    <td>lingor</td><td>DayZ Lingor</td><td>1.2</td><td>http://cdn.dayz.st/dayzcommander/DayZLingor-1.2.rar</td>
+  </tr>
+  <tr>
+    <td>celle</td><td>DayZ Celle</td><td>1.7.4.4</td><td>http://cdn.dayz.st/dayzcommander/DayZCelle-1.7.4.4.rar</td>
+  </tr>
+  <tr>
+    <td>fallujah</td><td>DayZ Fallujah</td><td>1.4</td><td>http://cdn.dayz.st/dayzcommander/DayZFallujah-1.4.rar</td>
+  </tr>
+  <tr>
+    <td>panthera</td><td>DayZ Panthera</td><td>1.7</td><td>http://cdn.dayz.st/dayzcommander/DayZPanthera-1.7.rar</td>
+  </tr>
+  <tr>
+    <td>takistan</td><td>DayZ Takistan</td><td>1.6</td><td>http://cdn.dayz.st/dayzcommander/DayZTakistan-1.6.rar</td>
+  </tr>
+  <tr>
+    <td>utes</td><td>DayZ Utes</td><td>1.2</td><td>http://cdn.dayz.st/dayzcommander/DayZUtes-1.2.rar</td>
+  </tr>
+  <tr>
+    <td>zargabad</td><td>DayZ Zargabad</td><td>1.4</td><td>http://cdn.dayz.st/dayzcommander/DayZZargabad-1.4.rar</td>
   </tr>
 </table>
 
 Extras Codes
 ------------
 
- NOTE: Not all mods support all the extras, this may change in future.
+ **Note:** DayZ+ and DayZ 2017 do not support any extras, this may change in future.
 
 <table>
   <tr>
@@ -113,13 +134,13 @@ Known Bugs
 Common Issues
 -------------
 
-**Problem**: Server crashes when the first player connects	
+**Problem**: Server crashes when the first player connects.	
 **Solution**: Ensure that you have `HiveEXT.dll` in your **@Server** Folder.
 
-**Problem**: Server not shown on the in-game browser or on third-party server browsers (DayZCommander etc.)       
+**Problem**: Server not shown on the in-game browser or on third-party server browsers (DayZCommander, PlayWithSIX etc.)       
 **Solution**: Ensure the game ports (Default: 2302 - 2305 UDP) are forwarded properly. 
 
-**Problem**: "Bad CD Key" messages	
+**Problem**: "Bad CD Key" messages.
 **Solution**: Buy the game.
 
 Donate
