@@ -741,8 +741,8 @@ echo.
 pause
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZ2017/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
-del None.pbo
+Resources\cpbo.exe -Y -E Wrecks_Killmsgs.pbo @Server > NUL
+del Wrecks_Killmsgs.pbo
 goto Finish
 )
 if exist Config_DayZSahrani (
@@ -808,8 +808,8 @@ echo.
 pause
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZ2017/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
-del None.pbo
+Resources\cpbo.exe -Y -E Carepkgs_Wrecks_Killmsgs.pbo @Server > NUL
+del Carepkgs_Wrecks_Killmsgs.pbo
 goto Finish
 )
 if exist Config_DayZSahrani (
