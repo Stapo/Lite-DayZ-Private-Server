@@ -25,8 +25,8 @@ Installation
  3. Extract all the contents of this repo into your Arma 2 Combined Operations directory.
  4. Execute `Server_Setup.bat`.
  5. Enter your MySQL login information (Note: Default username is root).
- 6. Enter the **Mod Code** for the mod you would like to use.
- 7. Enter the **Extra Code** for the extras you would like to use.
+ 6. Enter the [**Mod Code**] (https://github.com/Stapo/DayZ-Private-Server-Lite#mod-codes) for the mod you would like to use.
+ 7. Enter the [**Extra Code**] (https://github.com/Stapo/DayZ-Private-Server-Lite#extras-codes) for the extras you would like to use.
  8. Configure your hive settings (username, password, database, time and date) by editing `Config_<Mod Name>`/`HiveEXT.ini`.
  9. Configure all the settings of your server by editing `Config_<Mod Name>`/`ServerSettings.cfg`.
  10. **X** Configure your Rcon password/max ping by editing `Config_<Mod Name>`/`BEServer.cfg`.
@@ -134,7 +134,7 @@ Known Bugs
 Common Issues
 -------------
 
-**Problem**: Server crashes when the first player connects.	
+**Problem**: Server crashes when the first player connects.					
 **Solution**: Ensure that you have `HiveEXT.dll` in your **@Server** Folder.
 
 **Problem**: Server not shown on the in-game browser or on third-party server browsers (DayZCommander, PlayWithSIX etc.)       
