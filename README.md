@@ -6,10 +6,10 @@ Requirements
 
  - Microsoft Windows (Tested with 7 and Server 2008)
  - ArmA 2 Combined Operations Dedicated Server (Steam users must merge ArmA2 and ArmA2 OA Directories)
- - Latest [ArmA 2 Operation Arrowhead Beta Patch] (http://www.arma2.com/beta-patch.php)
- - [MySQL Server 5.5.x] (http://dev.mysql.com/downloads/mysql/) With TCP/IP Networking enabled using Port 3306
- - MySQL Database program such as [Navicat For MySql] (http://www.navicat.com/en/download/download.html) or [HeidiSQL] (http://www.heidisql.com/download.php)
- - [Microsoft Visual C++ 2010 SP1 x86 Redistributable] (http://www.microsoft.com/en-us/download/details.aspx?id=8328)
+ - Latest [**ArmA 2 Operation Arrowhead Beta Patch**] (http://www.arma2.com/beta-patch.php)
+ - [**MySQL Server 5.5.x**] (http://dev.mysql.com/downloads/mysql/) With TCP/IP Networking enabled using Port 3306
+ - MySQL Database program such as [**Navicat For MySql**] (http://www.navicat.com/en/download/download.html) or [**HeidiSQL**] (http://www.heidisql.com/download.php)
+ - [**Microsoft Visual C++ 2010 SP1 x86 Redistributable**] (http://www.microsoft.com/en-us/download/details.aspx?id=8328)
 
 Installation
 ------------
@@ -31,7 +31,7 @@ Installation
  9. Configure all the settings of your server by editing `Config_<Mod Name>`/`ServerSettings.cfg`.
  10. **X** Configure your Rcon password/max ping by editing `Config_<Mod Name>`/`BEServer.cfg`.
  11. Execute `Start Server.bat`.
- 12. Enter your MySQL login information again. (**Note:** if you use FireDeamon for starting your server, i adivise you make another batch file to start the server using [this example] (https://github.com/Stapo/Lite-Repo/raw/master/Example_Start_Server.bat)).
+ 12. Enter your MySQL login information again. (**Note:** if you use FireDeamon for starting your server, i adivise you make another batch file to start the server using this [**example**] (https://github.com/Stapo/Lite-Repo/raw/master/Example_Start_Server.bat)).
  13. Wait for the ArmA II Server Console to appear.
  14. Go and join your server!
  
@@ -45,7 +45,7 @@ Mod Codes
     <td>Mod Code</td><td>Mod Name</td><td>Supported Version</td><td>Direct Download Link</td>
   </tr>
   <tr>
-    <td>chernarus</td><td>DayZ</td><td>1.7.5.1</td><td>http://cdn.armafiles.info/latest/1.7.5/@Client-1.7.5.1-Full.rar</td>
+    <td>chernarus</td><td>DayZ</td><td>1.7.5.1</td><td>http://cdn.dayz.st/dayzcommander/DayZ-1.7.5.1.rar</td>
   </tr>
   <tr>
     <td>namalsk</td><td>DayZ Namalsk</td><td>0.73</td><td>http://cdn.dayz.st/dayzcommander/DayZNamalsk-0.73.rar</td>
@@ -129,7 +129,7 @@ Extras Codes
 Known Bugs
 ----------
 
- - If you find any bugs or have any issues related to this server pack, please submit them [here] (https://github.com/Stapo/DayZ-Private-Server-Lite/issues).
+ - If you find any bugs or have any issues related to this server pack, please submit them [**here**] (https://github.com/Stapo/DayZ-Private-Server-Lite/issues).
 
 Common Issues
 -------------
@@ -146,4 +146,4 @@ Common Issues
 Donate
 ------
 
- - This server pack is completely free although if you would like to show you support, you can feel free to donate [here] (https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=stapo19%40hotmail%2ecom&lc=AU&item_name=Stapo%27s%20Development&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted).
+ - This server pack is completely free although if you would like to show you support, you can feel free to donate [**here**] (https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=stapo19%40hotmail%2ecom&lc=AU&item_name=Stapo%27s%20Development&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted).
