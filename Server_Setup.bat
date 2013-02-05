@@ -74,7 +74,7 @@ Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Li
 Resources\mysql.exe --user=%mysqluser% --password=%mysqlpass% --host=127.0.0.1 --port=3306 --database=%mysqldb% < Functions.sql
 del Functions.sql
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/blob/master/Mods/DayZNamalsk/Mission/dayz_1.namalsk.pbo
-move /Y dayz_1.Chernarus.pbo MPMissions
+move /Y dayz_1.namalsk.pbo MPMissions
 goto Extras_Selection
 
 :DayZPlus
