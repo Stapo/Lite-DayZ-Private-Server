@@ -114,10 +114,10 @@ goto Extras_Selection
 
 :DayZSahrani
 cls
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Keys/caa1v2.bikey
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Keys/dayzsara.bikey
-move /Y caa1v2.bikey Keys
-move /Y dayzsara.bikey Keys
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Keys/v2caa1.bikey
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Keys/dayzsarav2.bikey
+move /Y v2caa1.bikey Keys
+move /Y dayzsarav2.bikey Keys
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZSahrani/Config/Config.pbo
 Resources\cpbo.exe -Y -E Config.pbo Config_DayZSahrani > NUL
 del Config.pbo
