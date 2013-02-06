@@ -1,4 +1,4 @@
-DayZ Private Server Lite
+Lite DayZ Private Server
 ========================
 
 Requirements
@@ -88,6 +88,9 @@ Mod Codes
   </tr>
   <tr>
     <td>zargabad</td><td>DayZ Zargabad</td><td>1.4</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZZargabad-1.4.rar" >Download</a></b></td>
+  </tr>
+  <tr>
+    <td>oring</td><td>DayZ Oring</td><td>1.0.6</td><td><b><a href="http://usoring.dayzfiles.com/@Dayz_oring_v1.0.6.rar" >Download</a></b></td>
   </tr>
 </table>
 
