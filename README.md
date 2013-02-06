@@ -7,7 +7,7 @@ Requirements
  - Microsoft Windows (Tested with 7 and Server 2008)
  - ArmA 2 Combined Operations Dedicated Server (Steam users must merge ArmA2 and ArmA2 OA Directories)
  - Latest [**ArmA 2 Operation Arrowhead Beta Patch**] (http://www.arma2.com/beta-patch.php)
- - [**MySQL Server 5.5.x**] (http://dev.mysql.com/downloads/mysql/) With TCP/IP Networking enabled using Port 3306
+ - [**MySQL Server 5.5.x**] (http://dev.mysql.com/downloads/mysql/5.5.html#downloads) With TCP/IP Networking enabled using Port 3306
  - MySQL Database program such as [**Navicat For MySql**] (http://www.navicat.com/en/download/download.html) or [**HeidiSQL**] (http://www.heidisql.com/download.php)
  - [**Microsoft Visual C++ 2010 SP1 x86 Redistributable**] (http://www.microsoft.com/en-us/download/details.aspx?id=8328)
 

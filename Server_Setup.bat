@@ -1,5 +1,5 @@
 @echo off
-TITLE DayZ Private Server Lite: Server Setup
+TITLE Lite DayZ Private Server: Server Setup
 goto Login
 
 :Login
@@ -905,7 +905,7 @@ exit
 
 :Server_Start_Mods
 cls
-TITLE DayZ Private Server Lite: Start Server
+TITLE Lite DayZ Private Server: Start Server
 if exist Config_DayZChernarus (
 set modconfig=DayZChernarus
 set clientmod=@DayZ
