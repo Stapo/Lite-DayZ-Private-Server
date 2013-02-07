@@ -40,6 +40,7 @@ if "%mod%"=="takistan" goto DayZTakistan
 if "%mod%"=="utes" goto DayZUtes
 if "%mod%"=="zargabad" goto DayZZargabad
 if "%mod%"=="oring" goto DayZOring
+if "%mod%"=="lingorskaro" goto DayZLingor_Skaro
 goto DayZChernarus
 
 :DayZChernarus
@@ -333,6 +334,23 @@ Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Li
 move /Y dayz_1.oring.pbo MPMissions
 goto Extras_Selection
 
+:DayZLingor_Skaro
+cls
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZLingor-Skaro/Keys/skaronator.bikey
+move /Y skaronator.bikey Keys
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZLingor-Skaro/Config/Config.pbo
+Resources\cpbo.exe -Y -E Config.pbo Config_DayZLingor-Skaro > NUL
+del Config.pbo
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZLingor-Skaro/Schema/Tables.sql
+Resources\mysql.exe --user=%mysqluser% --password=%mysqlpass% --host=127.0.0.1 --port=3306 --database=%mysqldb% < Tables.sql
+del Tables.sql
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZLingor-Skaro/Schema/Functions.sql
+Resources\mysql.exe --user=%mysqluser% --password=%mysqlpass% --host=127.0.0.1 --port=3306 --database=%mysqldb% < Functions.sql
+del Functions.sql
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZLingor-Skaro/Mission/dayz_1.lingor.pbo
+move /Y dayz_1.lingor.pbo MPMissions
+goto Extras_Selection
+
 :Extras_Selection
 cls
 echo.
@@ -397,6 +415,9 @@ Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Li
 )
 if exist Config_DayZOring (
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZOring/Extras/None.pbo
+)
+if exist Config_DayZLingor-Skaro (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZLingor-Skaro/Extras/None.pbo
 )
 Resources\cpbo.exe -Y -E None.pbo @Server > NUL
 del None.pbo
@@ -467,6 +488,9 @@ Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Li
 )
 if exist Config_DayZOring (
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZOring/Extras/Carepkgs.pbo
+)
+if exist Config_DayZLingor-Skaro (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZLingor-Skaro/Extras/Carepkgs.pbo
 )
 Resources\cpbo.exe -Y -E Carepkgs.pbo @Server > NUL
 del Carepkgs.pbo
@@ -539,6 +563,9 @@ Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Li
 if exist Config_DayZOring (
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZOring/Extras/Wrecks.pbo
 )
+if exist Config_DayZLingor-Skaro (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZLingor-Skaro/Extras/Wrecks.pbo
+)
 Resources\cpbo.exe -Y -E Wrecks.pbo @Server > NUL
 del Wrecks.pbo
 goto Finish
@@ -608,6 +635,9 @@ Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Li
 )
 if exist Config_DayZOring (
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZOring/Extras/Killmsgs.pbo
+)
+if exist Config_DayZLingor-Skaro (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZLingor-Skaro/Extras/Killmsgs.pbo
 )
 Resources\cpbo.exe -Y -E Killmsgs.pbo @Server > NUL
 del Killmsgs.pbo
@@ -679,6 +709,9 @@ Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Li
 if exist Config_DayZOring (
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZOring/Extras/Carepkgs_Wrecks.pbo
 )
+if exist Config_DayZLingor-Skaro (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZLingor-Skaro/Extras/Carepkgs_Wrecks.pbo
+)
 Resources\cpbo.exe -Y -E Carepkgs_Wrecks.pbo @Server > NUL
 del Carepkgs_Wrecks.pbo
 goto Finish
@@ -748,6 +781,9 @@ Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Li
 )
 if exist Config_DayZOring (
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZOring/Extras/Carepkgs_Killmsgs.pbo
+)
+if exist Config_DayZLingor-Skaro (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZLingor-Skaro/Extras/Carepkgs_Killmsgs.pbo
 )
 Resources\cpbo.exe -Y -E Carepkgs_Killmsgs.pbo @Server > NUL
 del Carepkgs_Killmsgs.pbo
@@ -819,6 +855,9 @@ Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Li
 if exist Config_DayZOring (
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZOring/Extras/Wrecks_Killmsgs.pbo
 )
+if exist Config_DayZLingor-Skaro (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZLingor-Skaro/Extras/Wrecks_Killmsgs.pbo
+)
 Resources\cpbo.exe -Y -E Wrecks_Killmsgs.pbo @Server > NUL
 del Wrecks_Killmsgs.pbo
 goto Finish
@@ -888,6 +927,9 @@ Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Li
 )
 if exist Config_DayZOring (
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZOring/Extras/Carepkgs_Wrecks_Killmsgs.pbo
+)
+if exist Config_DayZLingor-Skaro (
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZLingor-Skaro/Extras/Carepkgs_Wrecks_Killmsgs.pbo
 )
 Resources\cpbo.exe -Y -E Carepkgs_Wrecks_Killmsgs.pbo @Server > NUL
 del Carepkgs_Wrecks_Killmsgs.pbo
@@ -969,6 +1011,10 @@ set clientmod=@DayZZargabad
 if exist Config_DayZOring (
 set modconfig=DayZOring
 set clientmod=@DayZ_Oring
+)
+if exist Config_DayZLingor-Skaro (
+set modconfig=DayZLingor-Skaro
+set clientmod=@DayZLingorSkaro
 )
 
 goto Server_Start

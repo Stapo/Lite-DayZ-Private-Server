@@ -7,7 +7,7 @@ Requirements
  - Microsoft Windows (Tested with 7 and Server 2008)
  - ArmA 2 Combined Operations Dedicated Server (Steam users must merge ArmA2 and ArmA2 OA Directories)
  - Latest [**ArmA 2 Operation Arrowhead Beta Patch**] (http://www.arma2.com/beta-patch.php)
- - [**MySQL Server 5.5.x**] (http://dev.mysql.com/downloads/mysql/5.5.html#downloads) With TCP/IP Networking enabled using Port 3306
+ - [**MySQL Server 5.5.x Installed, Click This Link For Instructions On How To Install MySQL Server**] (https://github.com/Stapo/Lite-DayZ-Private-Server/wiki/MySQL-Server-Installation)
  - MySQL Database program such as [**Navicat For MySql**] (http://www.navicat.com/en/download/download.html) or [**HeidiSQL**] (http://www.heidisql.com/download.php)
  - [**Microsoft Visual C++ 2010 SP1 x86 Redistributable**] (http://www.microsoft.com/en-us/download/details.aspx?id=8328)
 
@@ -16,24 +16,32 @@ Installation
 
  **Note:** Steps with a **X** infront of them are optional.
 
- 1. Create a new database (call it whatever you want e.g. dayz)
- 2. **X** Create a new user by running this query in your database you just created (Note: The "ROOTPASSWORD" is the password you set for the root user when you installed mysql server).
+ 1. Using one of the MySQL Database Programs you downloaded, connect to your mysql server using these details (Note: The "ROOTPASSWORD" is the password you set for the root user when you installed mysql server).
  
-		create user 'YOURUSERNAME'@'localhost' identified by 'ROOTPASSWORD';
-		grant all privileges on YOURDATABASENAME.* to 'YOURUSERNAME'@'localhost';
+		Connection Name: WHATEVERYOUWANT
+		Host Name/IP Address: localhost
+		Port: 3306
+		User Name: root
+		Password: ROOTPASSWORD
+
+ 2. Create a new database (call it whatever you want e.g. dayz)
+ 3. **X** Create a new user by running this query in your database you just created 
+ 
+		create user 'YOURNEWUSERNAME'@'localhost' identified by 'ROOTPASSWORD';
+		grant all privileges on YOURDATABASENAME.* to 'YOURNEWUSERNAME'@'localhost';
 		
- 3. Extract all the contents of this repo into your Arma 2 Combined Operations directory.
- 4. Execute `Server_Setup.bat`.
- 5. Enter your MySQL login information (Note: Default username is root).
- 6. Enter the [**Mod Code**] (https://github.com/Stapo/DayZ-Private-Server-Lite#mod-codes) for the mod you would like to use.
- 7. Enter the [**Extra Code**] (https://github.com/Stapo/DayZ-Private-Server-Lite#extras-codes) for the extras you would like to use.
- 8. Configure your hive settings (username, password, database, time and date) by editing `Config_<Mod Name>`/`HiveEXT.ini`.
- 9. Configure all the settings of your server by editing `Config_<Mod Name>`/`ServerSettings.cfg`.
- 10. **X** Configure your Rcon password/max ping by editing `Config_<Mod Name>`/`BEServer.cfg`.
- 11. Execute `Start Server.bat`.
- 12. Enter your MySQL login information again. (**Note:** if you use FireDeamon for starting your server, i adivise you make another batch file to start the server using this [**example**] (https://github.com/Stapo/Lite-Repo/raw/master/Example_Start_Server.bat)).
- 13. Wait for the ArmA II Server Console to appear.
- 14. Go and join your server!
+ 4. Extract all the contents of this repo into your Arma 2 Combined Operations directory.
+ 5. Execute `Server_Setup.bat`.
+ 6. Enter your MySQL login information (Note: Default username is root).
+ 7. Enter the [**Mod Code**] (https://github.com/Stapo/DayZ-Private-Server-Lite#mod-codes) for the mod you would like to use.
+ 8. Enter the [**Extra Code**] (https://github.com/Stapo/DayZ-Private-Server-Lite#extras-codes) for the extras you would like to use.
+ 9. Configure your hive settings (username, password, database, time and date) by editing `Config_<Mod Name>`/`HiveEXT.ini`.
+ 10. Configure all the settings of your server by editing `Config_<Mod Name>`/`ServerSettings.cfg`.
+ 11. **X** Configure your Rcon password/max ping by editing `Config_<Mod Name>`/`BEServer.cfg`.
+ 12. Execute `Start Server.bat`.
+ 13. Enter your MySQL login information again. (Note: if you use FireDeamon or you use a program Auto-Restart your server, i adivise you make another batch file to start the server using this [**example**] (https://github.com/Stapo/Lite-Repo/raw/master/Example_Start_Server.bat)).
+ 14. Wait for the ArmA II Server Console to appear.
+ 15. Go and join your server!
  
 Mod Codes
 ---------
@@ -70,6 +78,9 @@ Mod Codes
   </tr>
   <tr>
     <td>lingor</td><td>DayZ Lingor</td><td>1.2</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZLingor-1.2.rar" >Download</a></b></td>
+  </tr>
+  <tr>
+    <td>lingorskaro</td><td>DayZ Lingor (Skaronator.com)</td><td>2.0</td><td><b><a href="http://dl.skaronator.com/DayZLingorSkaro-2.0.rar" >Download</a></b></td>
   </tr>
   <tr>
     <td>celle</td><td>DayZ Celle</td><td>1.7.4.4</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZCelle-1.7.4.4.rar" >Download</a></b></td>
