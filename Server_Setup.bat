@@ -17,11 +17,6 @@ echo.
 set mysqldb=
 set /P mysqldb=Database: 
 echo.
-goto Folder_Check
-
-:Folder_Check
-if not exist MPMissions md MPMissions
-if not exist Keys md Keys
 goto Mod_Selection
 
 :Mod_Selection
@@ -100,7 +95,7 @@ goto Mod_Downloader
 :DayZSahrani
 cls
 set modname=DayZSahrani
-set clientmod=@DayZ_Sahrani
+set clientmod=@DayZ_Sahrani;@caa1
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Keys/v2caa1.bikey
 move /Y v2caa1.bikey Keys
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Keys/dayzsarav2.bikey
@@ -287,7 +282,7 @@ goto Finish
 
 :Extras_Carepkgs
 cls
-if exist Config_%modname% (
+if exist Config_DayZPlus (
 echo DayZ+ does not support Care Packages, Server will now continue building as normal.
 echo.
 echo.
@@ -298,7 +293,7 @@ Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
-if exist Config_%modname% (
+if exist Config_DayZ2017 (
 echo DayZ2017 does not support Care Packages, Server will now continue building as normal.
 echo.
 echo.
@@ -316,7 +311,7 @@ goto Finish
 
 :Extras_Wrecks
 cls
-if exist Config_%modname% (
+if exist Config_DayZPlus (
 echo DayZ+ does not support Wrecks, Server will now continue building as normal.
 echo.
 echo.
@@ -327,7 +322,7 @@ Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
-if exist Config_%modname% (
+if exist Config_DayZ2017 (
 echo DayZ2017 does not support Wrecks, Server will now continue building as normal.
 echo.
 echo.
@@ -345,7 +340,7 @@ goto Finish
 
 :Extras_Killmsgs
 cls
-if exist Config_%modname% (
+if exist Config_DayZPlus (
 echo DayZ+ does not support Kill Messages, Server will now continue building as normal.
 echo.
 echo.
@@ -356,7 +351,7 @@ Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
-if exist Config_%modname% (
+if exist Config_DayZ2017 (
 echo DayZ2017 does not support Kill Messages, Server will now continue building as normal.
 echo.
 echo.
@@ -374,7 +369,7 @@ goto Finish
 
 :Extras_Carepkgs_Wrecks
 cls
-if exist Config_%modname% (
+if exist Config_DayZPlus (
 echo DayZ+ does not support Care Packages and Wrecks, Server will now continue building as normal.
 echo.
 echo.
@@ -385,7 +380,7 @@ Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
-if exist Config_%modname% (
+if exist Config_DayZ2017 (
 echo DayZ2017 does not support Care Packages and Wrecks, Server will now continue building as normal.
 echo.
 echo.
@@ -403,7 +398,7 @@ goto Finish
 
 :Extras_Carepkgs_Killmsgs
 cls
-if exist Config_%modname% (
+if exist Config_DayZPlus (
 echo DayZ+ does not support Care Packages and Kill Messages, Server will now continue building as normal.
 echo.
 echo.
@@ -414,7 +409,7 @@ Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
-if exist Config_%modname% (
+if exist Config_DayZ2017 (
 echo DayZ2017 does not support Care Packages and Kill Messages, Server will now continue building as normal.
 echo.
 echo.
@@ -432,7 +427,7 @@ goto Finish
 
 :Extras_Wrecks_Killmsgs
 cls
-if exist Config_%modname% (
+if exist Config_DayZPlus (
 echo DayZ+ does not support Wrecks and Kill Messages, Server will now continue building as normal.
 echo.
 echo.
@@ -443,7 +438,7 @@ Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
-if exist Config_%modname% (
+if exist Config_DayZ2017 (
 echo DayZ2017 does not support Wrecks and Kill Messages, Server will now continue building as normal.
 echo.
 echo.
@@ -461,7 +456,7 @@ goto Finish
 
 :Extras_Carepkgs_Wrecks_Killmsgs
 cls
-if exist Config_%modname% (
+if exist Config_DayZPlus (
 echo DayZ+ does not support Care Packages , Wrecks and Kill Messages, Server will now continue building as normal.
 echo.
 echo.
@@ -472,7 +467,7 @@ Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
-if exist Config_%modname% (
+if exist Config_DayZ2017 (
 echo DayZ2017 does not support Care Packages , Wrecks and Kill Messages, Server will now continue building as normal.
 echo.
 echo.
