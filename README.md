@@ -2,7 +2,7 @@ Lite DayZ Private Server
 ========================
 
 Requirements
--------------
+------------
 
  - Microsoft Windows (Tested with 7 and Server 2008)
  - ArmA 2 Combined Operations Dedicated Server (Steam users must merge ArmA2 and ArmA2 OA Directories)
@@ -33,13 +33,13 @@ Installation
  4. Extract all the contents of this repo into your Arma 2 Combined Operations directory.
  5. Execute `Server_Setup.bat`.
  6. Enter your MySQL login information (Note: Default username is root).
- 7. Enter the [**Mod Code**] (https://github.com/Stapo/DayZ-Private-Server-Lite#mod-codes) for the mod you would like to use.
- 8. Enter the [**Extra Code**] (https://github.com/Stapo/DayZ-Private-Server-Lite#extras-codes) for the extras you would like to use.
- 9. Configure your hive settings (username, password, database, time and date) by editing `Config_<Mod Name>`/`HiveEXT.ini`.
- 10. Configure all the settings of your server by editing `Config_<Mod Name>`/`ServerSettings.cfg`.
- 11. **X** Configure your Rcon password/max ping by editing `Config_<Mod Name>`/`BEServer.cfg`.
- 12. Execute `Start Server.bat`.
- 13. Enter your MySQL login information again. (Note: if you use FireDeamon or you use a program Auto-Restart your server, i adivise you make another batch file to start the server using this [**example**] (https://github.com/Stapo/Lite-Repo/raw/master/Example_Start_Server.bat)).
+ 7. Enter the [**Mod Code**] (https://github.com/Stapo/Lite-DayZ-Private-Server#mod-codes) for the mod you would like to use.
+ 8. Enter the [**Extra Code**] (https://github.com/Stapo/Lite-DayZ-Private-Server#extras-codes) for the extras you would like to use.
+ 9. Wait until you see "Server Setup Complete", Then press enter.
+ 10. Configure your hive settings (username, password, database, time and date) by editing `Config_<Mod Name>`/`HiveEXT.ini`.
+ 11. Configure all the settings of your server by editing `Config_<Mod Name>`/`ServerSettings.cfg`.
+ 12. **X** Configure your Rcon password/max ping by editing `Config_<Mod Name>`/`BEServer.cfg`.
+ 13. Execute `Start_Server.bat`.
  14. Wait for the ArmA II Server Console to appear.
  15. Go and join your server!
  
@@ -143,7 +143,7 @@ Extras Codes
 Known Bugs
 ----------
 
- - If you find any bugs or have any issues related to this server pack, please submit them [**here**] (https://github.com/Stapo/DayZ-Private-Server-Lite/issues).
+ - If you find any bugs or have any issues related to this server pack, please submit them [**here**] (https://github.com/Stapo/Lite-DayZ-Private-Server/issues).
 
 Common Issues
 -------------
