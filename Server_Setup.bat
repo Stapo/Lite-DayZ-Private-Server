@@ -17,6 +17,11 @@ echo.
 set mysqldb=
 set /P mysqldb=Database: 
 echo.
+goto Folder_Check
+
+:Folder_Check
+if not exist MPMissions md MPMissions
+if not exist Keys md Keys
 goto Mod_Selection
 
 :Mod_Selection
@@ -95,7 +100,7 @@ goto Mod_Downloader
 :DayZSahrani
 cls
 set modname=DayZSahrani
-set clientmod=@DayZ_Sahrani;@caa1
+set clientmod=@DayZ_Sahrani
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Keys/v2caa1.bikey
 move /Y v2caa1.bikey Keys
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Keys/dayzsarav2.bikey
