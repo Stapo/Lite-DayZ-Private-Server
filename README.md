@@ -149,7 +149,7 @@ Common Issues
 -------------
 
 **Problem**: Server crashes when the first player connects.					
-**Solution**: Ensure that you have `HiveEXT.dll` in your **@Server** Folder.
+**Solution**: Ensure that you have `HiveEXT.dll` in your `Server_<Mod Name>` Folder.
 
 **Problem**: Server not shown on the in-game browser or on third-party server browsers (DayZCommander, PlayWithSIX etc.)       
 **Solution**: Ensure the game ports (Default: 2302 - 2305 UDP) are forwarded properly. 

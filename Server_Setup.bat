@@ -239,7 +239,6 @@ move /Y dayz_1.lingor.pbo MPMissions
 goto Mod_Downloader
 
 :Mod_Downloader
-cls
 if exist Config_%modname% del Config_%modname%
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Config/Config.pbo
 Resources\cpbo.exe -Y -E Config.pbo Config_%modname% > NUL
@@ -277,7 +276,7 @@ goto Extras_Selection
 :Extras_None
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 
@@ -290,7 +289,7 @@ echo.
 pause
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
@@ -301,12 +300,12 @@ echo.
 pause
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/Carepkgs.pbo
-Resources\cpbo.exe -Y -E Carepkgs.pbo @Server > NUL
+Resources\cpbo.exe -Y -E Carepkgs.pbo @Server_%modname% > NUL
 del Carepkgs.pbo
 goto Finish
 
@@ -319,7 +318,7 @@ echo.
 pause
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
@@ -330,12 +329,12 @@ echo.
 pause
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/Wrecks.pbo
-Resources\cpbo.exe -Y -E Wrecks.pbo @Server > NUL
+Resources\cpbo.exe -Y -E Wrecks.pbo @Server_%modname% > NUL
 del Wrecks.pbo
 goto Finish
 
@@ -348,7 +347,7 @@ echo.
 pause
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
@@ -359,12 +358,12 @@ echo.
 pause
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/Killmsgs.pbo
-Resources\cpbo.exe -Y -E Killmsgs.pbo @Server > NUL
+Resources\cpbo.exe -Y -E Killmsgs.pbo @Server_%modname% > NUL
 del Killmsgs.pbo
 goto Finish
 
@@ -377,7 +376,7 @@ echo.
 pause
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
@@ -388,12 +387,12 @@ echo.
 pause
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/Carepkgs_Wrecks.pbo
-Resources\cpbo.exe -Y -E Carepkgs_Wrecks.pbo @Server > NUL
+Resources\cpbo.exe -Y -E Carepkgs_Wrecks.pbo @Server_%modname% > NUL
 del Carepkgs_Wrecks.pbo
 goto Finish
 
@@ -406,7 +405,7 @@ echo.
 pause
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
@@ -417,12 +416,12 @@ echo.
 pause
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/Carepkgs_Killmsgs.pbo
-Resources\cpbo.exe -Y -E Carepkgs_Killmsgs.pbo @Server > NUL
+Resources\cpbo.exe -Y -E Carepkgs_Killmsgs.pbo @Server_%modname% > NUL
 del Carepkgs_Killmsgs.pbo
 goto Finish
 
@@ -435,7 +434,7 @@ echo.
 pause
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
@@ -446,12 +445,12 @@ echo.
 pause
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/Wrecks_Killmsgs.pbo
-Resources\cpbo.exe -Y -E Wrecks_Killmsgs.pbo @Server > NUL
+Resources\cpbo.exe -Y -E Wrecks_Killmsgs.pbo @Server_%modname% > NUL
 del Wrecks_Killmsgs.pbo
 goto Finish
 
@@ -464,7 +463,7 @@ echo.
 pause
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZPlus/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server > NUL
+Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
 del None.pbo
 goto Finish
 )
@@ -475,12 +474,12 @@ echo.
 pause
 cls
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/DayZ2017/Extras/None.pbo
-Resources\cpbo.exe -Y -E Carepkgs_Wrecks_Killmsgs.pbo @Server > NUL
+Resources\cpbo.exe -Y -E Carepkgs_Wrecks_Killmsgs.pbo @Server_%modname% > NUL
 del Carepkgs_Wrecks_Killmsgs.pbo
 goto Finish
 )
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/Carepkgs_Wrecks_Killmsgs.pbo
-Resources\cpbo.exe -Y -E Carepkgs_Wrecks_Killmsgs.pbo @Server > NUL
+Resources\cpbo.exe -Y -E Carepkgs_Wrecks_Killmsgs.pbo @Server_%modname% > NUL
 del Carepkgs_Wrecks_Killmsgs.pbo
 goto Finish
 
@@ -491,11 +490,11 @@ echo Server Setup Complete!
 echo.
 echo.
 pause
-if exist Start_Server.bat del Start_Server.bat
+if exist Start_%modname%_Server.bat del Start_%modname%_Server.bat
+echo @echo off >> Start_%modname%_Server.bat
+echo Resources\mysql.exe --user=%mysqluser% --password=%mysqlpass% --host=127.0.0.1 --port=3306 --database=%mysqldb% --execute="call pMain()" >> Start_%modname%_Server.bat
+echo start .\Expansion\beta\arma2oaserver.exe -port=2302 -mod=%clientmod%;@Server_%modname% -name=DayZ -config=Config_%modname%\ServerSettings.cfg -cfg=Config_%modname%\Arma2Config.cfg -profiles=Config_%modname% >> Start_%modname%_Server.bat
+echo exit >> Start_%modname%_Server.bat
 if exist README.md move /Y README.md Resources 
-echo @echo off >> Start_Server.bat
-echo Resources\mysql.exe --user=%mysqluser% --password=%mysqlpass% --host=127.0.0.1 --port=3306 --database=%mysqldb% --execute="call pMain()" >> Start_Server.bat
-echo start .\Expansion\beta\arma2oaserver.exe -port=2302 -mod=%clientmod%;@Server -name=DayZ -config=Config_%modname%\ServerSettings.cfg -cfg=Config_%modname%\Arma2Config.cfg -profiles=Config_%modname% >> Start_Server.bat
-echo exit >> Start_Server.bat
 if exist Server_Setup.bat move /Y Server_Setup.bat Resources 
 exit
