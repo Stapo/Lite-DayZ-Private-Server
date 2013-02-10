@@ -158,15 +158,17 @@ goto Mod_Downloader
 :DayZCelle
 cls
 set modname=DayZCelle
-set clientmod=@DayZ_Celle;@MBG_Celle
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Keys/dayz.bikey
-move /Y dayz.bikey Keys
+set clientmod=@DayZ_Celle;@Dayz_Conflicts;@mbg_celle
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Keys/Graz_Celle.bikey
+move /Y Graz_Celle.bikey Keys
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Keys/Graz_Conflicts.bikey
+move /Y Graz_Conflicts.bikey Keys
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Keys/MBG_B3.bikey
 move /Y MBG_B3.bikey Keys
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Keys/MBG_Celle.bikey
+move /Y MBG_Celle.bikey Keys
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Keys/mbg_celle2.bikey
 move /Y mbg_celle2.bikey Keys
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Keys/shinkicker.bikey
-move /Y shinkicker.bikey Keys
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Mission/dayz_1.mbg_celle2.pbo
 move /Y dayz_1.mbg_celle2.pbo MPMissions
 goto Mod_Downloader

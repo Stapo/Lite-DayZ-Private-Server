@@ -83,7 +83,7 @@ Mod Codes
     <td>lingorskaro</td><td>DayZ Lingor (Skaronator.com)</td><td>2.0</td><td><b><a href="http://dl.skaronator.com/DayZLingorSkaro-2.0.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>celle</td><td>DayZ Celle</td><td>1.7.4.4</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZCelle-1.7.4.4.rar" >Download</a></b></td>
+    <td>celle</td><td>DayZ Celle</td><td>1.7.5.1</td><td><b><a href="http://opendayz.net/index.php?threads/v1-7-5-1-celle-release-download-here.7711/" >Download</a></b></td>
   </tr>
   <tr>
     <td>fallujah</td><td>DayZ Fallujah</td><td>1.4</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZFallujah-1.4.rar" >Download</a></b></td>
