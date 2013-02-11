@@ -39,7 +39,7 @@ Installation
  10. Configure your hive settings (username, password, database, time and date) by editing `Config_<Mod Name>`/`HiveEXT.ini`.
  11. Configure all the settings of your server by editing `Config_<Mod Name>`/`ServerSettings.cfg`.
  12. **X** Configure your Rcon password/max ping by editing `Config_<Mod Name>`/`BEServer.cfg`.
- 13. Execute `Start_Server.bat`.
+ 13. Execute `Start_<Mod Name>_Server.bat`.
  14. Wait for the ArmA II Server Console to appear.
  15. Go and join your server!
  
@@ -77,10 +77,7 @@ Mod Codes
     <td>thirskwinter</td><td>DayZ Thirsk Winter</td><td>1.3</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZThirsk-1.3.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>lingor</td><td>DayZ Lingor</td><td>1.2</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZLingor-1.2.rar" >Download</a></b></td>
-  </tr>
-  <tr>
-    <td>lingorskaro</td><td>DayZ Lingor (Skaronator.com)</td><td>2.0</td><td><b><a href="http://dl.skaronator.com/DayZLingorSkaro-2.0.rar" >Download</a></b></td>
+    <td>lingor</td><td>DayZ Lingor</td><td>2.0</td><td><b><a href="http://dl.skaronator.com/DayZLingorSkaro-2.0.rar" >Download</a></b></td>
   </tr>
   <tr>
     <td>celle</td><td>DayZ Celle</td><td>1.7.5.1</td><td><b><a href="http://opendayz.net/index.php?threads/v1-7-5-1-celle-release-download-here.7711/" >Download</a></b></td>
@@ -101,7 +98,7 @@ Mod Codes
     <td>zargabad</td><td>DayZ Zargabad</td><td>1.4</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZZargabad-1.4.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>oring</td><td>DayZ Oring</td><td>1.0.6</td><td><b><a href="http://usoring.dayzfiles.com/@Dayz_oring_v1.0.6.rar" >Download</a></b></td>
+    <td>oring</td><td>DayZ Oring</td><td>1.0.6</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZOring-1.0.6.rar" >Download</a></b></td>
   </tr>
 </table>
 

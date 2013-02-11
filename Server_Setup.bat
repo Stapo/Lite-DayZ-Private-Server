@@ -44,7 +44,6 @@ if "%mod%"=="takistan" goto DayZTakistan
 if "%mod%"=="utes" goto DayZUtes
 if "%mod%"=="zargabad" goto DayZZargabad
 if "%mod%"=="oring" goto DayZOring
-if "%mod%"=="lingorskaro" goto DayZLingor_Skaro
 goto Mod_Error
 
 :Mod_Error
@@ -148,9 +147,9 @@ goto Mod_Downloader
 :DayZLingor
 cls
 set modname=DayZLingor
-set clientmod=@DayZLingor
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Keys/vilayer_lingor.bikey
-move /Y vilayer_lingor.bikey Keys
+set clientmod=@DayZLingorSkaro
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Keys/skaronator.bikey
+move /Y skaronator.bikey Keys
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Mission/dayz_1.lingor.pbo
 move /Y dayz_1.lingor.pbo MPMissions
 goto Mod_Downloader
@@ -233,16 +232,6 @@ Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Li
 move /Y FRAN.bikey Keys
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Mission/dayz_1.oring.pbo
 move /Y dayz_1.oring.pbo MPMissions
-goto Mod_Downloader
-
-:DayZLingor_Skaro
-cls
-set modname=DayZLingor-Skaro
-set clientmod=@DayZLingorSkaro
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Keys/skaronator.bikey
-move /Y skaronator.bikey Keys
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Mission/dayz_1.lingor.pbo
-move /Y dayz_1.lingor.pbo MPMissions
 goto Mod_Downloader
 
 :Mod_Downloader
