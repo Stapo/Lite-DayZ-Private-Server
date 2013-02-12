@@ -93,38 +93,23 @@ echo Invalid Extra Code, Press Any Key To Enter Another One...
 pause > NUL
 goto Extras_Selection
 
+:Extra_NoSupport
+echo %modname% does not support Extras, Server will now continue building as normal.
+echo.
+echo.
+pause
+cls
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
+Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
+del None.pbo
+set extraname=None
+goto Finish
+
 :Extras_Downloader
 cls
-if exist Config_DayZPlus (
-echo DayZ+ does not support Extras, Server will now continue building as normal.
-echo.
-echo.
-pause
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
-del None.pbo
-goto Finish
-)
-if exist Config_DayZ2017 (
-echo DayZ2017 does not support Extras, Server will now continue building as normal.
-echo.
-echo.
-pause
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
-del None.pbo
-goto Finish
-)
-if exist Config_DayZOring (
-echo DayZ Oring does not support Extras, Server will now continue building as normal.
-echo.
-echo.
-pause
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
-del None.pbo
-goto Finish
-)
+if "%modname%"=="DayZPlus" goto Extra_NoSupport
+if "%modname%"=="DayZ2017" goto Extra_NoSupport
+if "%modname%"=="DayZOring" goto Extra_NoSupport
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/%extraname%.pbo
 Resources\cpbo.exe -Y -E %extraname%.pbo @Server_%modname% > NUL
 del %extraname%.pbo
