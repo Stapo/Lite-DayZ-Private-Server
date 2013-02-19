@@ -125,7 +125,7 @@ pause
 if exist Start_%modname%_Server.bat del Start_%modname%_Server.bat
 echo @echo off >> Start_%modname%_Server.bat
 echo Resources\mysql.exe --user=%mysqluser% --password=%mysqlpass% --host=127.0.0.1 --port=3306 --database=%mysqldb% --execute="call pMain()" >> Start_%modname%_Server.bat
-echo start .\Expansion\beta\arma2oaserver.exe -port=2302 -mod=%clientmod%;@Server_%modname% -name=DayZ -config=Config_%modname%\ServerSettings.cfg -cfg=Config_%modname%\Arma2Config.cfg -profiles=Config_%modname% >> Start_%modname%_Server.bat
+echo start .\Expansion\beta\arma2oaserver.exe -port=2302 -mod=expansion\beta;expansion\beta\expansion;%clientmod%;@Server_%modname% -name=DayZ -config=Config_%modname%\ServerSettings.cfg -cfg=Config_%modname%\Arma2Config.cfg -profiles=Config_%modname% >> Start_%modname%_Server.bat
 echo exit >> Start_%modname%_Server.bat
 if exist README.md move /Y README.md Resources 
 if exist Server_Setup.bat move /Y Server_Setup.bat Resources 
