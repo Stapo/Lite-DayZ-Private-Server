@@ -56,7 +56,7 @@ Mod Codes
     <td>chernarus</td><td>DayZ</td><td>1.7.5.1</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZ-1.7.5.1.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>namalsk</td><td>DayZ Namalsk</td><td>0.73</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZNamalsk-0.73.rar" >Download</a></b></td>
+    <td>namalsk</td><td>DayZ Namalsk</td><td>0.74</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZNamalsk-0.7.4.rar" >Download</a></b></td>
   </tr>
   <tr>
     <td>plus</td><td>DayZ+</td><td>1.1.2</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZPlus-1.1.2.rar" >Download</a></b></td>
@@ -77,7 +77,7 @@ Mod Codes
     <td>thirskwinter</td><td>DayZ Thirsk Winter</td><td>1.3</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZThirsk-1.3.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>lingor</td><td>DayZ Lingor</td><td>2.0</td><td><b><a href="http://dl.skaronator.com/DayZLingorSkaro-2.0.rar" >Download</a></b></td>
+    <td>lingor</td><td>DayZ Lingor</td><td>2.0</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZLingorSkaronator-2.0.rar" >Download</a></b></td>
   </tr>
   <tr>
     <td>celle</td><td>DayZ Celle</td><td>1.7.5.1</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZCelle-1.7.5.1.rar" >Download</a></b></td>
@@ -98,14 +98,14 @@ Mod Codes
     <td>zargabad</td><td>DayZ Zargabad</td><td>1.4</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZZargabad-1.4.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>oring</td><td>DayZ Oring</td><td>1.0.7</td><td><b><a href="http://deoring.dayzfiles.com/DayZOring-1.0.7.rar" >Download</a></b></td>
+    <td>oring</td><td>DayZ Oring</td><td>1.0.7</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZOring-1.0.7.rar" >Download</a></b></td>
   </tr>
 </table>
 
 Extras Codes
 ------------
 
- **Note:** DayZ+, DayZ 2017 and DayZ Oring do not support any extras, this may change in future.
+ **Note:** DayZ+, DayZ 2017, DayZ Namalsk and DayZ Oring do not support any extras, this may change in future.
 
 <table>
   <tr>
