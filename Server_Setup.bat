@@ -110,7 +110,7 @@ cls
 if "%modname%"=="DayZPlus" goto Extra_NoSupport
 if "%modname%"=="DayZ2017" goto Extra_NoSupport
 if "%modname%"=="DayZOring" goto Extra_NoSupport
-if "%modname%"=="DayZNamalsk" goto Extra_NoSupprt
+if "%modname%"=="DayZNamalsk" goto Extra_NoSupport
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/%extraname%.pbo
 Resources\cpbo.exe -Y -E %extraname%.pbo @Server_%modname% > NUL
 del %extraname%.pbo
