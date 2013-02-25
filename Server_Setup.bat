@@ -26,6 +26,7 @@ goto Mod_Selection
 cls
 echo.
 set /P mod=Mod Code: 
+if "%mod%"=="dayztest" set modname=DayZ176& set clientmod=@DayZ& goto Mod_Downloader
 if "%mod%"=="chernarus" set modname=DayZChernarus& set clientmod=@DayZ& goto Mod_Downloader
 if "%mod%"=="namalsk"  set modname=DayZNamalsk& set clientmod=@DayZ;@DayZ_Namalsk& goto Mod_Downloader
 if "%mod%"=="plus"  set modname=DayZPlus& set clientmod=@DayZ+& goto Mod_Downloader
@@ -107,6 +108,7 @@ goto Finish
 
 :Extras_Downloader
 cls
+if "%modname%"=="DayZ176" goto Extra_NoSupport
 if "%modname%"=="DayZPlus" goto Extra_NoSupport
 if "%modname%"=="DayZ2017" goto Extra_NoSupport
 if "%modname%"=="DayZOring" goto Extra_NoSupport
