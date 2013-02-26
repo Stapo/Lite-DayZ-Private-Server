@@ -34,14 +34,13 @@ Installation
  5. Execute `Server_Setup.bat`.
  6. Enter your MySQL login information (Note: Default username is root).
  7. Enter the [**Mod Code**] (https://github.com/Stapo/Lite-DayZ-Private-Server#mod-codes) for the mod you would like to use.
- 8. Enter the [**Extra Code**] (https://github.com/Stapo/Lite-DayZ-Private-Server#extras-codes) for the extras you would like to use.
- 9. Wait until you see "Server Setup Complete", Then press enter.
- 10. Configure your hive settings (username, password, database, time and date) by editing `Config_<Mod Name>`/`HiveEXT.ini`.
- 11. Configure all the settings of your server by editing `Config_<Mod Name>`/`ServerSettings.cfg`.
- 12. **X** Configure your Rcon password/max ping by editing `Config_<Mod Name>`/`BEServer.cfg`.
- 13. Execute `Start_<Mod Name>_Server.bat`.
- 14. Wait for the ArmA II Server Console to appear.
- 15. Go and join your server!
+ 8. Wait until you see "Server Setup Complete", Then press enter.
+ 9. Configure your hive settings (username, password, database, time and date) by editing `Config_<Mod Name>`/`HiveEXT.ini`.
+ 10. Configure all the settings of your server by editing `Config_<Mod Name>`/`ServerSettings.cfg`.
+ 11. **X** Configure your Rcon password/max ping by editing `Config_<Mod Name>`/`BEServer.cfg`.
+ 12. Execute `Start_<Mod Name>_Server.bat`.
+ 13. Wait for the ArmA II Server Console to appear.
+ 14. Go and join your server!
  
 Mod Codes
 ---------
@@ -53,7 +52,7 @@ Mod Codes
     <td>Mod Code</td><td>Mod Name</td><td>Supported Version</td><td>Direct Link</td>
   </tr>
   <tr>
-    <td>chernarus</td><td>DayZ</td><td>1.7.5.1</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZ-1.7.5.1.rar" >Download</a></b></td>
+    <td>chernarus</td><td>DayZ</td><td>1.7.6</td><td><b><a href="http://se1.dayz.nu/latest/1.7.6/%40Client-1.7.6-Full.rar" >Download</a></b></td>
   </tr>
   <tr>
     <td>namalsk</td><td>DayZ Namalsk</td><td>0.74</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZNamalsk-0.7.4.rar" >Download</a></b></td>
@@ -99,41 +98,6 @@ Mod Codes
   </tr>
   <tr>
     <td>oring</td><td>DayZ Oring</td><td>1.0.7</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZOring-1.0.7.rar" >Download</a></b></td>
-  </tr>
-</table>
-
-Extras Codes
-------------
-
- **Note:** DayZ+, DayZ 2017, DayZ Namalsk and DayZ Oring do not support any extras, this may change in future.
-
-<table>
-  <tr>
-    <td>Extra Code</td><td>Extra Name</td>
-  </tr>
-  <tr>
-    <td>none</td><td>No Extas</td>
-  </tr>
-  <tr>
-    <td>carepkgs</td><td>Care Packages</td>
-  </tr>
-  <tr>
-    <td>wrecks</td><td>Wrecks</td>
-  </tr>
-  <tr>
-    <td>killmsgs</td><td>Kill Messages</td>
-  </tr>
-  <tr>
-    <td>combo1</td><td>Care Packages and Wrecks</td>
-  </tr>
-  <tr>
-    <td>combo2</td><td>Care Packages and Kill Messages</td>
-  </tr>
-  <tr>
-    <td>combo3</td><td>Wrecks and Kill Messages</td>
-  </tr>
-  <tr>
-    <td>combo4</td><td>Care Packages, Wrecks and Kill Messages</td>
   </tr>
 </table>
 

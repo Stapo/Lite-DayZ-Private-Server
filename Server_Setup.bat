@@ -26,7 +26,6 @@ goto Mod_Selection
 cls
 echo.
 set /P mod=Mod Code: 
-if "%mod%"=="dayztest" set modname=DayZ176& set clientmod=@DayZ& goto Mod_Downloader
 if "%mod%"=="chernarus" set modname=DayZChernarus& set clientmod=@DayZ& goto Mod_Downloader
 if "%mod%"=="namalsk"  set modname=DayZNamalsk& set clientmod=@DayZ;@DayZ_Namalsk& goto Mod_Downloader
 if "%mod%"=="plus"  set modname=DayZPlus& set clientmod=@DayZ+& goto Mod_Downloader
@@ -55,6 +54,7 @@ goto Mod_Selection
 :Mod_Downloader
 cls
 if exist Config_%modname% del Config_%modname%
+if exist @Server_%modname% del @Server_%modname%
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Config/Config.pbo
 Resources\cpbo.exe -Y -E Config.pbo Config_%modname% > NUL
 del Config.pbo
@@ -70,58 +70,15 @@ del Tables.sql
 Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Schema/Functions.sql
 Resources\mysql.exe --user=%mysqluser% --password=%mysqlpass% --host=127.0.0.1 --port=3306 --database=%mysqldb% < Functions.sql
 del Functions.sql
-goto Extras_Selection
-
-:Extras_Selection
-cls
-if exist @Server_%modname% del @Server_%modname%
-echo.
-set /P extra=Extra Code: 
-if "%extra%"=="none" set extraname=None& goto Extras_Downloader
-if "%extra%"=="carepkgs" set extraname=Carepkgs& goto Extras_Downloader
-if "%extra%"=="wrecks" set extraname=Wrecks& goto Extras_Downloader
-if "%extra%"=="killmsgs" set extraname=Killmsgs& goto Extras_Downloader
-if "%extra%"=="combo1" set extraname=Carepkgs_Wrecks& goto Extras_Downloader
-if "%extra%"=="combo2" set extraname=Carepkgs_Killmsgs& goto Extras_Downloader
-if "%extra%"=="combo3" set extraname=Wrecks_Killmsgs& goto Extras_Downloader
-if "%extra%"=="combo4" set extraname=Carepkgs_Wrecks_Killmsgs& goto Extras_Downloader
-goto Extras_Error
-
-:Extras_Error
-cls
-echo.
-echo Invalid Extra Code, Press Any Key To Enter Another One...
-pause > NUL
-goto Extras_Selection
-
-:Extra_NoSupport
-echo %modname% does not support Extras, Server will now continue building as normal.
-echo.
-echo.
-pause
-cls
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/None.pbo
-Resources\cpbo.exe -Y -E None.pbo @Server_%modname% > NUL
-del None.pbo
-set extraname=None
-goto Finish
-
-:Extras_Downloader
-cls
-if "%modname%"=="DayZ176" goto Extra_NoSupport
-if "%modname%"=="DayZPlus" goto Extra_NoSupport
-if "%modname%"=="DayZ2017" goto Extra_NoSupport
-if "%modname%"=="DayZOring" goto Extra_NoSupport
-if "%modname%"=="DayZNamalsk" goto Extra_NoSupport
-Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Extras/%extraname%.pbo
-Resources\cpbo.exe -Y -E %extraname%.pbo @Server_%modname% > NUL
-del %extraname%.pbo
+Resources\wget.exe -N --quiet --no-check-certificate https://github.com/Stapo/Lite-Repo/raw/master/Mods/%modname%/Server/Server.pbo
+Resources\cpbo.exe -Y -E Server.pbo @Server_%modname% > NUL
+del Server.pbo
 goto Finish
 
 :Finish
 cls
 echo.
-echo You Have Successfully Built A %modname% Server With %extraname%!
+echo You Have Successfully Built A %modname% Server
 echo.
 echo.
 pause
