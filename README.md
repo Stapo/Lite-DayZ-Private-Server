@@ -76,7 +76,7 @@ Mod Codes
     <td>thirskwinter</td><td>DayZ Thirsk Winter</td><td>1.3</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZThirsk-1.3.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>lingor</td><td>DayZ Lingor</td><td>2.0</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZLingorSkaronator-2.0.rar" >Download</a></b></td>
+    <td>lingor</td><td>DayZ Lingor</td><td>2.1</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZLingorSkaronator-2.1.rar" >Download</a></b></td>
   </tr>
   <tr>
     <td>celle</td><td>DayZ Celle</td><td>1.7.5.1</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZCelle-1.7.5.1.rar" >Download</a></b></td>
