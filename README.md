@@ -52,7 +52,7 @@ Mod Codes
     <td>Mod Code</td><td>Mod Name</td><td>Supported Version</td><td>Direct Link</td>
   </tr>
   <tr>
-    <td>chernarus</td><td>DayZ</td><td>1.7.6</td><td><b><a href="http://se1.dayz.nu/latest/1.7.6/%40Client-1.7.6-Full.rar" >Download</a></b></td>
+    <td>chernarus</td><td>DayZ</td><td>1.7.6.1</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZ-1.7.6.1.rar" >Download</a></b></td>
   </tr>
   <tr>
     <td>namalsk</td><td>DayZ Namalsk</td><td>0.74</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZNamalsk-0.7.4.rar" >Download</a></b></td>
@@ -79,22 +79,22 @@ Mod Codes
     <td>lingor</td><td>DayZ Lingor</td><td>2.1</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZLingorSkaronator-2.1.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>celle</td><td>DayZ Celle</td><td>1.7.5.1</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZCelle-1.7.5.1.rar" >Download</a></b></td>
+    <td>celle</td><td>DayZ Celle</td><td>1.9</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayzCelle-1.9.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>fallujah</td><td>DayZ Fallujah</td><td>1.4</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZFallujah-1.4.rar" >Download</a></b></td>
+    <td>fallujah</td><td>DayZ Fallujah</td><td>1.5</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZFallujah-1.5.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>panthera</td><td>DayZ Panthera</td><td>1.7</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZPanthera-1.7.rar" >Download</a></b></td>
+    <td>panthera</td><td>DayZ Panthera</td><td>1.8</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZPanthera-1.8.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>takistan</td><td>DayZ Takistan</td><td>1.6</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZTakistan-1.6.rar" >Download</a></b></td>
+    <td>takistan</td><td>DayZ Takistan</td><td>1.7</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZTakistan-1.7.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>utes</td><td>DayZ Utes</td><td>1.2</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZUtes-1.2.rar" >Download</a></b></td>
+    <td>utes</td><td>DayZ Utes</td><td>1.3</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZUtes-1.3.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>zargabad</td><td>DayZ Zargabad</td><td>1.4</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZZargabad-1.4.rar" >Download</a></b></td>
+    <td>zargabad</td><td>DayZ Zargabad</td><td>1.5</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZZargabad-1.5.rar" >Download</a></b></td>
   </tr>
   <tr>
     <td>oring</td><td>DayZ Oring</td><td>1.0.7</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZOring-1.0.7.rar" >Download</a></b></td>
