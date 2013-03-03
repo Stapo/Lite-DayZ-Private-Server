@@ -97,7 +97,7 @@ Mod Codes
     <td>zargabad</td><td>DayZ Zargabad</td><td>1.5</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZZargabad-1.5.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>oring</td><td>DayZ Oring</td><td>1.0.7</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZOring-1.0.7.rar" >Download</a></b></td>
+    <td>oring</td><td>DayZ Oring</td><td>1.0.8</td><td><b><a href="http://deoring.dayzfiles.com/DayZOring-1.0.8.rar" >Download</a></b></td>
   </tr>
 </table>
 
