@@ -45,7 +45,7 @@ Installation
 Mod Codes
 ---------
 
- **Note:** The mod which you would like to use must be installed prior to installing the server, this can be done by downloading most of them with [**DayZCommander**] (http://www.dayzcommander.com).
+ **Note:** The mod which you would like to use must be installed prior to installing the server, this can be done by downloading most of them with [**PlayWithSIX**] (http://play.withsix.com) or [**DayZCommander**] (http://dayzcommander.com).
 
 <table>
   <tr>
@@ -55,13 +55,16 @@ Mod Codes
     <td>chernarus</td><td>DayZ</td><td>1.7.6.1</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZ-1.7.6.1.rar" >Download</a></b></td>
   </tr>
   <tr>
-    <td>namalsk</td><td>DayZ Namalsk</td><td>0.74</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZNamalsk-0.7.4.rar" >Download</a></b></td>
+    <td>i44</td><td>DayZ: Invasion 1944</td><td>0.2.1</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZi44-0.2.1.rar" >Download</a></b></td>
   </tr>
   <tr>
     <td>plus</td><td>DayZ+</td><td>1.1.2</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZPlus-1.1.2.rar" >Download</a></b></td>
   </tr>
   <tr>
     <td>2017</td><td>DayZ 2017</td><td>1.1</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZ2017-1.1.rar" >Download</a></b></td>
+  </tr>
+  <tr>
+    <td>namalsk</td><td>DayZ Namalsk</td><td>0.741</td><td><b><a href="http://cdn.dayz.st/dayzcommander/DayZNamalsk-0.7.4.rar" >Download</a></b></td>
   </tr>
   <tr>
     <td>sahrani</td><td>DayZ Sahrani</td><td>0.1</td><td><b><a href="http://5.135.153.158/@DayZ_Sahrani.rar" >Download</a></b></td>
